@@ -1,0 +1,45 @@
+per lanciare ros2_build.sh:
+sudo --preserve-env=ROS_DISTRO,ROS_PACKAGE,ROS_ROOT \
+  ROS_DISTRO=humble \
+  ROS_PACKAGE="" \
+  ROS_ROOT="/opt/ros2_humble" \
+  ./ros2_build.sh
+  
+  
+  backup file : /etc/ros/rosdep/sources.list.d/20-default.list
+  # os-specific listings first
+yaml https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/osx-homebrew.yaml osx
+
+# generic
+yaml https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/base.yaml
+yaml https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/python.yaml
+yaml https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/ruby.yaml
+gbpdistro https://raw.githubusercontent.com/ros/rosdistro/master/releases/fuerte.yaml fuerte
+
+# newer distributions (Groovy, Hydro, ...) must not be listed anymore, they are being fetched from the rosdistro index.yaml instead
+
+
+token: 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
+
+
+# per risolvere problema build zed-ros2-wrapper:
+
+
+
+sudo apt update 
+sudo apt install -y curl gnupg2 lsb-release
+curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key \
+  | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu \
+  $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
+
+
+#install pytorch for jetson with cuda:
+
+sudo apt-get install -y libopenblas-base libopenmpi-dev
+
+wget https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl -O torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
+pip3 install torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
+
+
+ 

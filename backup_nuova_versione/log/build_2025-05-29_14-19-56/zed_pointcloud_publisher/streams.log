@@ -1,0 +1,37 @@
+[5.060s] Invoking command in '/root/ros2_ws/src/zed_pointcloud_publisher': PYTHONPATH=/root/ros2_ws/build/zed_pointcloud_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/zed_pointcloud_publisher build --build-base /root/ros2_ws/build/zed_pointcloud_publisher/build install --record /root/ros2_ws/build/zed_pointcloud_publisher/install.log --single-version-externally-managed install_data
+[6.272s] running egg_info
+[6.281s] creating ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info
+[6.282s] writing ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/PKG-INFO
+[6.283s] writing dependency_links to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/dependency_links.txt
+[6.283s] writing entry points to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/entry_points.txt
+[6.285s] writing requirements to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/requires.txt
+[6.287s] writing top-level names to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/top_level.txt
+[6.290s] writing manifest file '../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/SOURCES.txt'
+[6.461s] reading manifest file '../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/SOURCES.txt'
+[6.471s] writing manifest file '../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/SOURCES.txt'
+[6.472s] running build
+[6.474s] running build_py
+[6.475s] creating /root/ros2_ws/build/zed_pointcloud_publisher/build
+[6.478s] creating /root/ros2_ws/build/zed_pointcloud_publisher/build/lib
+[6.481s] creating /root/ros2_ws/build/zed_pointcloud_publisher/build/lib/zed_pointcloud_publisher
+[6.487s] copying zed_pointcloud_publisher/zed_pointcloud_publisher.py -> /root/ros2_ws/build/zed_pointcloud_publisher/build/lib/zed_pointcloud_publisher
+[6.490s] copying zed_pointcloud_publisher/__init__.py -> /root/ros2_ws/build/zed_pointcloud_publisher/build/lib/zed_pointcloud_publisher
+[6.491s] running install
+[6.493s] running install_lib
+[6.512s] creating /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher
+[6.514s] copying /root/ros2_ws/build/zed_pointcloud_publisher/build/lib/zed_pointcloud_publisher/zed_pointcloud_publisher.py -> /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher
+[6.517s] copying /root/ros2_ws/build/zed_pointcloud_publisher/build/lib/zed_pointcloud_publisher/__init__.py -> /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher
+[6.520s] byte-compiling /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher/zed_pointcloud_publisher.py to zed_pointcloud_publisher.cpython-38.pyc
+[6.532s] byte-compiling /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher/__init__.py to __init__.cpython-38.pyc
+[6.533s] running install_data
+[6.535s] creating /root/ros2_ws/install/share/ament_index
+[6.537s] creating /root/ros2_ws/install/share/ament_index/resource_index
+[6.540s] creating /root/ros2_ws/install/share/ament_index/resource_index/packages
+[6.543s] copying resource/zed_pointcloud_publisher -> /root/ros2_ws/install/share/ament_index/resource_index/packages
+[6.545s] copying package.xml -> /root/ros2_ws/install/share/zed_pointcloud_publisher
+[6.547s] running install_egg_info
+[6.560s] Copying ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info to /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher-0.0.0-py3.8.egg-info
+[6.564s] running install_scripts
+[6.616s] Installing zed_pointcloud_publisher script to /root/ros2_ws/install/lib/zed_pointcloud_publisher
+[6.619s] writing list of installed files to '/root/ros2_ws/build/zed_pointcloud_publisher/install.log'
+[6.733s] Invoked command in '/root/ros2_ws/src/zed_pointcloud_publisher' returned '0': PYTHONPATH=/root/ros2_ws/build/zed_pointcloud_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/zed_pointcloud_publisher build --build-base /root/ros2_ws/build/zed_pointcloud_publisher/build install --record /root/ros2_ws/build/zed_pointcloud_publisher/install.log --single-version-externally-managed install_data

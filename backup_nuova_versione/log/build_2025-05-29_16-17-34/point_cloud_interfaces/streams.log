@@ -1,0 +1,142 @@
+[0.253s] Invoking command in '/root/ros2_ws/build/point_cloud_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/build/point_cloud_interfaces -- -j6 -l6
+[2.074s] [  3%] Built target point_cloud_interfaces__cpp
+[2.076s] [ 12%] Built target point_cloud_interfaces__rosidl_generator_c
+[2.083s] [ 12%] Built target ament_cmake_python_copy_point_cloud_interfaces
+[2.089s] [ 22%] Built target point_cloud_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.090s] [ 32%] Built target point_cloud_interfaces__rosidl_typesupport_cpp
+[2.090s] [ 41%] Built target point_cloud_interfaces__rosidl_typesupport_introspection_cpp
+[2.092s] [ 51%] Built target point_cloud_interfaces__rosidl_typesupport_c
+[2.093s] [ 61%] Built target point_cloud_interfaces__rosidl_typesupport_fastrtps_c
+[2.097s] [ 70%] Built target point_cloud_interfaces__rosidl_typesupport_introspection_c
+[2.104s] [ 70%] Built target point_cloud_interfaces
+[2.106s] [ 74%] Built target point_cloud_interfaces__py
+[2.109s] [ 80%] Built target point_cloud_interfaces__rosidl_generator_py
+[2.154s] [ 87%] Built target point_cloud_interfaces__rosidl_typesupport_c__pyext
+[2.196s] [ 93%] Built target point_cloud_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.220s] [100%] Built target point_cloud_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[3.045s] running egg_info
+[3.056s] writing point_cloud_interfaces.egg-info/PKG-INFO
+[3.061s] writing dependency_links to point_cloud_interfaces.egg-info/dependency_links.txt
+[3.062s] writing top-level names to point_cloud_interfaces.egg-info/top_level.txt
+[3.287s] reading manifest file 'point_cloud_interfaces.egg-info/SOURCES.txt'
+[3.293s] writing manifest file 'point_cloud_interfaces.egg-info/SOURCES.txt'
+[3.498s] [100%] Built target ament_cmake_python_build_point_cloud_interfaces_egg
+[3.869s] Invoked command in '/root/ros2_ws/build/point_cloud_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/build/point_cloud_interfaces -- -j6 -l6
+[3.961s] Invoking command in '/root/ros2_ws/build/point_cloud_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/build/point_cloud_interfaces
+[4.024s] -- Install configuration: ""
+[4.029s] -- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/rosidl_interfaces/point_cloud_interfaces
+[4.029s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces
+[4.031s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg
+[4.033s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/compressed_point_cloud2.h
+[4.035s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail
+[4.037s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__struct.h
+[4.043s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__functions.c
+[4.046s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__type_support.h
+[4.048s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__functions.h
+[4.050s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/rosidl_generator_c__visibility_control.h
+[4.053s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/library_path.sh
+[4.059s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/library_path.dsv
+[4.066s] -- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_generator_c.so
+[4.073s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces
+[4.077s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg
+[4.079s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.081s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail
+[4.082s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__rosidl_typesupport_fastrtps_c.h
+[4.083s] -- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_fastrtps_c.so
+[4.086s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces
+[4.091s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg
+[4.093s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/compressed_point_cloud2.hpp
+[4.094s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail
+[4.095s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__traits.hpp
+[4.098s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__builder.hpp
+[4.099s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__struct.hpp
+[4.101s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces
+[4.102s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg
+[4.104s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail
+[4.106s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/dds_fastrtps
+[4.108s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__rosidl_typesupport_fastrtps_cpp.hpp
+[4.110s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.113s] -- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[4.116s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces
+[4.118s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg
+[4.119s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.122s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail
+[4.124s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__type_support.c
+[4.127s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__rosidl_typesupport_introspection_c.h
+[4.137s] -- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_introspection_c.so
+[4.139s] -- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_c.so
+[4.142s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces
+[4.145s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg
+[4.145s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail
+[4.147s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__rosidl_typesupport_introspection_cpp.hpp
+[4.147s] -- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__type_support.cpp
+[4.152s] -- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_introspection_cpp.so
+[4.162s] -- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_cpp.so
+[4.165s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/pythonpath.sh
+[4.167s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/pythonpath.dsv
+[4.170s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces-1.0.11-py3.9.egg-info
+[4.174s] -- Installing: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces-1.0.11-py3.9.egg-info/PKG-INFO
+[4.177s] -- Installing: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces-1.0.11-py3.9.egg-info/top_level.txt
+[4.179s] -- Installing: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces-1.0.11-py3.9.egg-info/dependency_links.txt
+[4.182s] -- Installing: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces-1.0.11-py3.9.egg-info/SOURCES.txt
+[4.184s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces
+[4.186s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[4.189s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[4.190s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/_point_cloud_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.192s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/_point_cloud_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[4.194s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[4.195s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/_point_cloud_interfaces_s.ep.rosidl_typesupport_c.c
+[4.197s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/__init__.py
+[4.200s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/msg
+[4.201s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/msg/_compressed_point_cloud2_s.c
+[4.202s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/msg/_compressed_point_cloud2.py
+[4.204s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/msg/__init__.py
+[4.205s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/libpoint_cloud_interfaces__rosidl_generator_py.so
+[4.460s] Listing '/root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces'...
+[4.462s] Listing '/root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/msg'...
+[4.505s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[4.507s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[4.514s] -- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[4.522s] -- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_generator_py.so
+[4.532s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/msg/CompressedPointCloud2.idl
+[4.535s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/msg/CompressedPointCloud2.msg
+[4.538s] -- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/package_run_dependencies/point_cloud_interfaces
+[4.548s] -- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/parent_prefix_path/point_cloud_interfaces
+[4.553s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/ament_prefix_path.sh
+[4.556s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/ament_prefix_path.dsv
+[4.558s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/path.sh
+[4.560s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/path.dsv
+[4.562s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/local_setup.bash
+[4.566s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/local_setup.sh
+[4.570s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/local_setup.zsh
+[4.572s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/local_setup.dsv
+[4.575s] -- Installing: /root/ros2_ws/install/share/point_cloud_interfaces/package.dsv
+[4.578s] -- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/packages/point_cloud_interfaces
+[4.584s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_generator_cExport.cmake
+[4.586s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_generator_cExport-noconfig.cmake
+[4.597s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[4.598s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.599s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_generator_cppExport.cmake
+[4.601s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.604s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.621s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.630s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.635s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_cExport.cmake
+[4.636s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[4.637s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.637s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.638s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_cppExport.cmake
+[4.638s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[4.653s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_generator_pyExport.cmake
+[4.654s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[4.654s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/rosidl_cmake-extras.cmake
+[4.664s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.668s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.670s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.672s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.674s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.680s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.685s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfacesConfig.cmake
+[4.687s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfacesConfig-version.cmake
+[4.690s] -- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/package.xml
+[4.710s] Invoked command in '/root/ros2_ws/build/point_cloud_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/build/point_cloud_interfaces

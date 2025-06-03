@@ -1,0 +1,21 @@
+[7.135s] Invoking command in '/root/ros2_ws/src/diane_encoder': PYTHONPATH=/root/ros2_ws/build/diane_encoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diane_encoder build --build-base /root/ros2_ws/build/diane_encoder/build install --record /root/ros2_ws/build/diane_encoder/install.log --single-version-externally-managed install_data
+[9.039s] running egg_info
+[9.045s] writing ../../build/diane_encoder/diane_encoder.egg-info/PKG-INFO
+[9.055s] writing dependency_links to ../../build/diane_encoder/diane_encoder.egg-info/dependency_links.txt
+[9.059s] writing entry points to ../../build/diane_encoder/diane_encoder.egg-info/entry_points.txt
+[9.075s] writing requirements to ../../build/diane_encoder/diane_encoder.egg-info/requires.txt
+[9.083s] writing top-level names to ../../build/diane_encoder/diane_encoder.egg-info/top_level.txt
+[9.273s] reading manifest file '../../build/diane_encoder/diane_encoder.egg-info/SOURCES.txt'
+[9.285s] writing manifest file '../../build/diane_encoder/diane_encoder.egg-info/SOURCES.txt'
+[9.293s] running build
+[9.294s] running build_py
+[9.306s] running install
+[9.310s] running install_lib
+[9.315s] running install_data
+[9.318s] running install_egg_info
+[9.328s] removing '/root/ros2_ws/install/lib/python3.8/site-packages/diane_encoder-0.0.0-py3.8.egg-info' (and everything under it)
+[9.331s] Copying ../../build/diane_encoder/diane_encoder.egg-info to /root/ros2_ws/install/lib/python3.8/site-packages/diane_encoder-0.0.0-py3.8.egg-info
+[9.346s] running install_scripts
+[9.480s] Installing diane_publisher script to /root/ros2_ws/install/lib/diane_encoder
+[9.487s] writing list of installed files to '/root/ros2_ws/build/diane_encoder/install.log'
+[9.636s] Invoked command in '/root/ros2_ws/src/diane_encoder' returned '0': PYTHONPATH=/root/ros2_ws/build/diane_encoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diane_encoder build --build-base /root/ros2_ws/build/diane_encoder/build install --record /root/ros2_ws/build/diane_encoder/install.log --single-version-externally-managed install_data

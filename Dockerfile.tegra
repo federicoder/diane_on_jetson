@@ -1,0 +1,81 @@
+ARG UBUNTU_RELEASE_YEAR=22
+ARG L4T_MAJOR=35 
+ARG L4T_MINOR=4
+ARG ZED_SDK_MAJOR=4
+ARG ZED_SDK_MINOR=1
+
+FROM stereolabs/zed:${ZED_SDK_MAJOR}.${ZED_SDK_MINOR}-tools-devel-l4t-r${L4T_MAJOR}.${L4T_MINOR}
+
+ARG ROS2_DIST=humble
+ARG DEBIAN_FRONTEND=noninteractive
+
+ENV NVIDIA_DRIVER_CAPABILITIES \
+    ${NVIDIA_DRIVER_CAPABILITIES:+$NVIDIA_DRIVER_CAPABILITIES,}compute,video,utility
+
+############ Install ROS2 ############
+
+# Set and Check Locale
+RUN apt-get update || true && \
+    apt-get install -y locales && \
+    locale-gen en_US en_US.UTF-8 && \
+    update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 && \
+    export LANG=en_US.UTF-8
+
+
+# Setup Sources
+RUN apt-get update || true && \
+    apt-get install -y software-properties-common && \
+    add-apt-repository universe
+
+RUN wget -qO - https://isaac.download.nvidia.com/isaac-ros/repos.key | apt-key add -
+RUN echo 'deb https://isaac.download.nvidia.com/isaac-ros/ubuntu/main focal main' | tee -a /etc/apt/sources.list
+
+RUN apt-get update && sudo apt install curl -y && \
+    curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+
+RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu focal main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null
+# Install ROS 2 Base packages and Python dependencies #ros-${ROS2_DIST}-ros-base
+RUN apt-get update || true && \
+  apt-get install --no-install-recommends -y \
+  ros-${ROS2_DIST}-desktop \
+  ros-${ROS2_DIST}-ament-cmake-clang-format \
+  ros-${ROS2_DIST}-image-transport \
+  ros-${ROS2_DIST}-image-transport-plugins \
+  ros-${ROS2_DIST}-diagnostic-updater \
+  ros-${ROS2_DIST}-xacro \
+  ros-humble-point-cloud-transport \
+  gdb \
+  python3-flake8-docstrings \
+  python3-pip \
+  python3-pytest-cov \
+  ros-dev-tools && \
+  pip3 install \
+  argcomplete \
+  numpy \
+  empy \
+  lark && \
+  rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update
+RUN apt-get install -y wget gedit
+# Initialize rosdep
+RUN rosdep init && rosdep update
+
+
+# Copy my files in src:
+RUN mkdir -p ~/ros2_ws/src/zed_pointcloud_publisher
+
+COPY src /root/ros2_ws/src
+
+#Installing torch:
+RUN sudo apt-get install -y libopenblas-base libopenmpi-dev 
+RUN wget https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl -O torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
+RUN pip3 install torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
+
+# Setup environment variables
+COPY ros_entrypoint.sh /sbin/ros_entrypoint.sh
+RUN sudo chmod 755 /sbin/ros_entrypoint.sh
+
+ENTRYPOINT ["/sbin/ros_entrypoint.sh"]
+WORKDIR /root/ros2_ws
+CMD ["bash"]

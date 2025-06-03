@@ -1,0 +1,3 @@
+[console_scripts]
+zed_pointcloud_publisher = zed_pointcloud_publisher.zed_pointcloud_publisher:main
+

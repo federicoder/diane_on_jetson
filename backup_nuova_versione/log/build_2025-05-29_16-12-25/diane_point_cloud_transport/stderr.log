@@ -1,0 +1,18 @@
+[01m[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/src/diane_encoder.cpp:109:22:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 5 of ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> > encode_diane_multinomial_i16(const at::Tensor&, float, float, float, const std::array<float, 4>&, const std::array<float, 4>&)[m[K’
+  109 | std::vector<uint8_t> [01;31m[Kencode_diane_multinomial_i16[m[K(
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/src/diane_encoder.cpp:12[m[K:
+[01m[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/include/diane_point_cloud_transport/diane_encoder.hpp:26:22:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> > encode_diane_multinomial_i16(const at::Tensor&, float, float, float, const std::array<float, 4>&, const std::array<float, 4>&)[m[K’ here
+   26 | std::vector<uint8_t> [01;36m[Kencode_diane_multinomial_i16[m[K(
+      |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/src/diane_encoder.cpp:109:22:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 6 of ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> > encode_diane_multinomial_i16(const at::Tensor&, float, float, float, const std::array<float, 4>&, const std::array<float, 4>&)[m[K’
+  109 | std::vector<uint8_t> [01;31m[Kencode_diane_multinomial_i16[m[K(
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/src/diane_encoder.cpp:12[m[K:
+[01m[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/include/diane_point_cloud_transport/diane_encoder.hpp:26:22:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kstd::vector<unsigned char, std::allocator<unsigned char> > encode_diane_multinomial_i16(const at::Tensor&, float, float, float, const std::array<float, 4>&, const std::array<float, 4>&)[m[K’ here
+   26 | std::vector<uint8_t> [01;36m[Kencode_diane_multinomial_i16[m[K(
+      |                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/diane_point_cloud_transport.dir/build.make:63: CMakeFiles/diane_point_cloud_transport.dir/src/diane_encoder.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/diane_point_cloud_transport.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

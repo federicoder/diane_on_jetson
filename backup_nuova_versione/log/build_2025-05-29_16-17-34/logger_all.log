@@ -1,0 +1,453 @@
+[1.939s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--merge-install', '--event-handlers', 'console_direct+']
+[1.941s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=['console_direct+'], executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffab863250>>, merge_install=True, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=6, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffab863250>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffab79fd30>)
+[3.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.140s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/ros2_ws'
+[3.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.142s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.223s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.224s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.224s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.225s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.228s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.228s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/diane_encoder) by extensions ['ignore', 'ignore_ament_install']
+[3.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/diane_encoder) by extension 'ignore'
+[3.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/diane_encoder) by extension 'ignore_ament_install'
+[3.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/diane_encoder) by extensions ['colcon_pkg']
+[3.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/diane_encoder) by extension 'colcon_pkg'
+[3.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/diane_encoder) by extensions ['colcon_meta']
+[3.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/diane_encoder) by extension 'colcon_meta'
+[3.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/diane_encoder) by extensions ['ros']
+[3.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/diane_encoder) by extension 'ros'
+[3.255s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diane_encoder' with type 'ros.ament_python' and name 'diane_encoder'
+[3.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extensions ['ignore', 'ignore_ament_install']
+[3.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extension 'ignore'
+[3.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extension 'ignore_ament_install'
+[3.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extensions ['colcon_pkg']
+[3.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extension 'colcon_pkg'
+[3.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extensions ['colcon_meta']
+[3.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extension 'colcon_meta'
+[3.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extensions ['ros']
+[3.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extension 'ros'
+[3.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extensions ['cmake', 'python']
+[3.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extension 'cmake'
+[3.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extension 'python'
+[3.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extensions ['python_setup_py']
+[3.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble) by extension 'python_setup_py'
+[3.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/diane_point_cloud_transport) by extensions ['ignore', 'ignore_ament_install']
+[3.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/diane_point_cloud_transport) by extension 'ignore'
+[3.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/diane_point_cloud_transport) by extension 'ignore_ament_install'
+[3.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/diane_point_cloud_transport) by extensions ['colcon_pkg']
+[3.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/diane_point_cloud_transport) by extension 'colcon_pkg'
+[3.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/diane_point_cloud_transport) by extensions ['colcon_meta']
+[3.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/diane_point_cloud_transport) by extension 'colcon_meta'
+[3.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/diane_point_cloud_transport) by extensions ['ros']
+[3.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/diane_point_cloud_transport) by extension 'ros'
+[3.273s] DEBUG:colcon.colcon_core.package_identification:Package 'src/point_cloud_transport_plugins-humble/diane_point_cloud_transport' with type 'ros.ament_cmake' and name 'diane_point_cloud_transport'
+[3.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/draco_point_cloud_transport) by extensions ['ignore', 'ignore_ament_install']
+[3.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/draco_point_cloud_transport) by extension 'ignore'
+[3.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/draco_point_cloud_transport) ignored
+[3.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[3.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_interfaces) by extension 'ignore'
+[3.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_interfaces) by extension 'ignore_ament_install'
+[3.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_interfaces) by extensions ['colcon_pkg']
+[3.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_interfaces) by extension 'colcon_pkg'
+[3.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_interfaces) by extensions ['colcon_meta']
+[3.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_interfaces) by extension 'colcon_meta'
+[3.279s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_interfaces) by extensions ['ros']
+[3.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_interfaces) by extension 'ros'
+[3.285s] DEBUG:colcon.colcon_core.package_identification:Package 'src/point_cloud_transport_plugins-humble/point_cloud_interfaces' with type 'ros.ament_cmake' and name 'point_cloud_interfaces'
+[3.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins) by extensions ['ignore', 'ignore_ament_install']
+[3.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins) by extension 'ignore'
+[3.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins) by extension 'ignore_ament_install'
+[3.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins) by extensions ['colcon_pkg']
+[3.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins) by extension 'colcon_pkg'
+[3.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins) by extensions ['colcon_meta']
+[3.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins) by extension 'colcon_meta'
+[3.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins) by extensions ['ros']
+[3.289s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins) by extension 'ros'
+[3.293s] DEBUG:colcon.colcon_core.package_identification:Package 'src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins' with type 'ros.ament_cmake' and name 'point_cloud_transport_plugins'
+[3.294s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/zlib_point_cloud_transport) by extensions ['ignore', 'ignore_ament_install']
+[3.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/zlib_point_cloud_transport) by extension 'ignore'
+[3.295s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/zlib_point_cloud_transport) ignored
+[3.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/zstd_point_cloud_transport) by extensions ['ignore', 'ignore_ament_install']
+[3.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/zstd_point_cloud_transport) by extension 'ignore'
+[3.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/point_cloud_transport_plugins-humble/zstd_point_cloud_transport) ignored
+[3.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed_pointcloud_publisher) by extensions ['ignore', 'ignore_ament_install']
+[3.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed_pointcloud_publisher) by extension 'ignore'
+[3.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed_pointcloud_publisher) by extension 'ignore_ament_install'
+[3.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed_pointcloud_publisher) by extensions ['colcon_pkg']
+[3.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed_pointcloud_publisher) by extension 'colcon_pkg'
+[3.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed_pointcloud_publisher) by extensions ['colcon_meta']
+[3.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed_pointcloud_publisher) by extension 'colcon_meta'
+[3.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed_pointcloud_publisher) by extensions ['ros']
+[3.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed_pointcloud_publisher) by extension 'ros'
+[3.306s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed_pointcloud_publisher' with type 'ros.ament_python' and name 'zed_pointcloud_publisher'
+[3.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.306s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.307s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.469s] Level 5:colcon.colcon_core.verb:set package 'diane_encoder' build argument 'cmake_args' from command line to 'None'
+[3.470s] Level 5:colcon.colcon_core.verb:set package 'diane_encoder' build argument 'cmake_target' from command line to 'None'
+[3.470s] Level 5:colcon.colcon_core.verb:set package 'diane_encoder' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.470s] Level 5:colcon.colcon_core.verb:set package 'diane_encoder' build argument 'cmake_clean_cache' from command line to 'False'
+[3.471s] Level 5:colcon.colcon_core.verb:set package 'diane_encoder' build argument 'cmake_clean_first' from command line to 'False'
+[3.471s] Level 5:colcon.colcon_core.verb:set package 'diane_encoder' build argument 'cmake_force_configure' from command line to 'False'
+[3.471s] Level 5:colcon.colcon_core.verb:set package 'diane_encoder' build argument 'ament_cmake_args' from command line to 'None'
+[3.471s] Level 5:colcon.colcon_core.verb:set package 'diane_encoder' build argument 'catkin_cmake_args' from command line to 'None'
+[3.471s] Level 5:colcon.colcon_core.verb:set package 'diane_encoder' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.471s] DEBUG:colcon.colcon_core.verb:Building package 'diane_encoder' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/build/diane_encoder', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/install', 'merge_install': True, 'path': '/root/ros2_ws/src/diane_encoder', 'symlink_install': False, 'test_result_base': None}
+[3.474s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_interfaces' build argument 'cmake_args' from command line to 'None'
+[3.474s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_interfaces' build argument 'cmake_target' from command line to 'None'
+[3.475s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.475s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[3.475s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[3.475s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[3.475s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[3.475s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[3.476s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.476s] DEBUG:colcon.colcon_core.verb:Building package 'point_cloud_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/build/point_cloud_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/install', 'merge_install': True, 'path': '/root/ros2_ws/src/point_cloud_transport_plugins-humble/point_cloud_interfaces', 'symlink_install': False, 'test_result_base': None}
+[3.479s] Level 5:colcon.colcon_core.verb:set package 'zed_pointcloud_publisher' build argument 'cmake_args' from command line to 'None'
+[3.479s] Level 5:colcon.colcon_core.verb:set package 'zed_pointcloud_publisher' build argument 'cmake_target' from command line to 'None'
+[3.479s] Level 5:colcon.colcon_core.verb:set package 'zed_pointcloud_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.480s] Level 5:colcon.colcon_core.verb:set package 'zed_pointcloud_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[3.480s] Level 5:colcon.colcon_core.verb:set package 'zed_pointcloud_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[3.480s] Level 5:colcon.colcon_core.verb:set package 'zed_pointcloud_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[3.480s] Level 5:colcon.colcon_core.verb:set package 'zed_pointcloud_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[3.481s] Level 5:colcon.colcon_core.verb:set package 'zed_pointcloud_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[3.481s] Level 5:colcon.colcon_core.verb:set package 'zed_pointcloud_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.481s] DEBUG:colcon.colcon_core.verb:Building package 'zed_pointcloud_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/build/zed_pointcloud_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/install', 'merge_install': True, 'path': '/root/ros2_ws/src/zed_pointcloud_publisher', 'symlink_install': False, 'test_result_base': None}
+[3.484s] Level 5:colcon.colcon_core.verb:set package 'diane_point_cloud_transport' build argument 'cmake_args' from command line to 'None'
+[3.484s] Level 5:colcon.colcon_core.verb:set package 'diane_point_cloud_transport' build argument 'cmake_target' from command line to 'None'
+[3.484s] Level 5:colcon.colcon_core.verb:set package 'diane_point_cloud_transport' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.484s] Level 5:colcon.colcon_core.verb:set package 'diane_point_cloud_transport' build argument 'cmake_clean_cache' from command line to 'False'
+[3.484s] Level 5:colcon.colcon_core.verb:set package 'diane_point_cloud_transport' build argument 'cmake_clean_first' from command line to 'False'
+[3.485s] Level 5:colcon.colcon_core.verb:set package 'diane_point_cloud_transport' build argument 'cmake_force_configure' from command line to 'False'
+[3.485s] Level 5:colcon.colcon_core.verb:set package 'diane_point_cloud_transport' build argument 'ament_cmake_args' from command line to 'None'
+[3.485s] Level 5:colcon.colcon_core.verb:set package 'diane_point_cloud_transport' build argument 'catkin_cmake_args' from command line to 'None'
+[3.485s] Level 5:colcon.colcon_core.verb:set package 'diane_point_cloud_transport' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.485s] DEBUG:colcon.colcon_core.verb:Building package 'diane_point_cloud_transport' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/build/diane_point_cloud_transport', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/install', 'merge_install': True, 'path': '/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport', 'symlink_install': False, 'test_result_base': None}
+[3.488s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_plugins' build argument 'cmake_args' from command line to 'None'
+[3.488s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_plugins' build argument 'cmake_target' from command line to 'None'
+[3.488s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.488s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[3.489s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[3.489s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[3.489s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[3.489s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[3.489s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.489s] DEBUG:colcon.colcon_core.verb:Building package 'point_cloud_transport_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/build/point_cloud_transport_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/install', 'merge_install': True, 'path': '/root/ros2_ws/src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins', 'symlink_install': False, 'test_result_base': None}
+[3.490s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.496s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.498s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/src/point_cloud_transport_plugins-humble/point_cloud_interfaces' with build type 'ament_cmake'
+[3.499s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/src/point_cloud_transport_plugins-humble/point_cloud_interfaces'
+[3.522s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.525s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.525s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.586s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/ros2_ws/src/diane_encoder' with build type 'ament_python'
+[3.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('diane_encoder', 'ament_prefix_path')
+[3.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_encoder/hook/ament_prefix_path.ps1'
+[3.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/diane_encoder/hook/ament_prefix_path.dsv'
+[3.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_encoder/hook/ament_prefix_path.sh'
+[3.619s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.620s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.655s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/ros2_ws/src/zed_pointcloud_publisher' with build type 'ament_python'
+[3.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_pointcloud_publisher', 'ament_prefix_path')
+[3.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/ament_prefix_path.ps1'
+[3.673s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/ament_prefix_path.dsv'
+[3.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/ament_prefix_path.sh'
+[3.680s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.681s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/build/point_cloud_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/build/point_cloud_interfaces -- -j6 -l6
+[5.500s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ros2_ws/src/diane_encoder'
+[5.506s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.507s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.275s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/ros2_ws/src/zed_pointcloud_publisher'
+[7.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.284s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/build/point_cloud_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/build/point_cloud_interfaces -- -j6 -l6
+[7.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/build/point_cloud_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/build/point_cloud_interfaces
+[8.207s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_cloud_interfaces)
+[8.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/build/point_cloud_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/build/point_cloud_interfaces
+[8.242s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake module files
+[8.247s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake config files
+[8.249s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_interfaces', 'cmake_prefix_path')
+[8.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/cmake_prefix_path.ps1'
+[8.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_interfaces/hook/cmake_prefix_path.dsv'
+[8.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/cmake_prefix_path.sh'
+[8.270s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib'
+[8.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_interfaces', 'ld_library_path_lib')
+[8.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/ld_library_path_lib.ps1'
+[8.279s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_interfaces/hook/ld_library_path_lib.dsv'
+[8.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/ld_library_path_lib.sh'
+[8.284s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[8.285s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/pkgconfig/point_cloud_interfaces.pc'
+[8.287s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/python3.8/site-packages'
+[8.288s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_interfaces', 'pythonpath')
+[8.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/pythonpath.ps1'
+[8.296s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_interfaces/hook/pythonpath.dsv'
+[8.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/pythonpath.sh'
+[8.304s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[8.307s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_interfaces/package.ps1'
+[8.315s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/install/share/point_cloud_interfaces/package.dsv'
+[8.320s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_interfaces/package.sh'
+[8.326s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_interfaces/package.bash'
+[8.333s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_interfaces/package.zsh'
+[8.337s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/install/share/colcon-core/packages/point_cloud_interfaces)
+[8.343s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_cloud_interfaces)
+[8.345s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake module files
+[8.349s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake config files
+[8.351s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_interfaces', 'cmake_prefix_path')
+[8.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/cmake_prefix_path.ps1'
+[8.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_interfaces/hook/cmake_prefix_path.dsv'
+[8.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/cmake_prefix_path.sh'
+[8.362s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib'
+[8.363s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_interfaces', 'ld_library_path_lib')
+[8.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/ld_library_path_lib.ps1'
+[8.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_interfaces/hook/ld_library_path_lib.dsv'
+[8.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/ld_library_path_lib.sh'
+[8.374s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[8.375s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/pkgconfig/point_cloud_interfaces.pc'
+[8.376s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/python3.8/site-packages'
+[8.376s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_interfaces', 'pythonpath')
+[8.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/pythonpath.ps1'
+[8.381s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_interfaces/hook/pythonpath.dsv'
+[8.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_interfaces/hook/pythonpath.sh'
+[8.387s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[8.390s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_interfaces/package.ps1'
+[8.402s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/install/share/point_cloud_interfaces/package.dsv'
+[8.408s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_interfaces/package.sh'
+[8.413s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_interfaces/package.bash'
+[8.418s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_interfaces/package.zsh'
+[8.423s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/install/share/colcon-core/packages/point_cloud_interfaces)
+[8.428s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport' with build type 'ament_cmake'
+[8.437s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport'
+[8.440s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.441s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/build/diane_point_cloud_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/install/lib:/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --build /root/ros2_ws/build/diane_point_cloud_transport -- -j6 -l6
+[10.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/diane_encoder': PYTHONPATH=/root/ros2_ws/build/diane_encoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diane_encoder build --build-base /root/ros2_ws/build/diane_encoder/build install --record /root/ros2_ws/build/diane_encoder/install.log --single-version-externally-managed install_data
+[10.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/src/zed_pointcloud_publisher': PYTHONPATH=/root/ros2_ws/build/zed_pointcloud_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/zed_pointcloud_publisher build --build-base /root/ros2_ws/build/zed_pointcloud_publisher/build install --record /root/ros2_ws/build/zed_pointcloud_publisher/install.log --single-version-externally-managed install_data
+[12.525s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake module files
+[12.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/diane_encoder' returned '0': PYTHONPATH=/root/ros2_ws/build/diane_encoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/diane_encoder build --build-base /root/ros2_ws/build/diane_encoder/build install --record /root/ros2_ws/build/diane_encoder/install.log --single-version-externally-managed install_data
+[12.533s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake config files
+[12.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('diane_encoder', 'cmake_prefix_path')
+[12.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_encoder/hook/cmake_prefix_path.ps1'
+[12.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/diane_encoder/hook/cmake_prefix_path.dsv'
+[12.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_encoder/hook/cmake_prefix_path.sh'
+[12.554s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib'
+[12.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('diane_encoder', 'ld_library_path_lib')
+[12.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_encoder/hook/ld_library_path_lib.ps1'
+[12.559s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/diane_encoder/hook/ld_library_path_lib.dsv'
+[12.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_encoder/hook/ld_library_path_lib.sh'
+[12.567s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[12.568s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/pkgconfig/diane_encoder.pc'
+[12.569s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/python3.8/site-packages'
+[12.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('diane_encoder', 'pythonpath')
+[12.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_encoder/hook/pythonpath.ps1'
+[12.574s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/diane_encoder/hook/pythonpath.dsv'
+[12.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_encoder/hook/pythonpath.sh'
+[12.580s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[12.580s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diane_encoder)
+[12.583s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_encoder/package.ps1'
+[12.587s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/install/share/diane_encoder/package.dsv'
+[12.592s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_encoder/package.sh'
+[12.595s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_encoder/package.bash'
+[12.598s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_encoder/package.zsh'
+[12.601s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/install/share/colcon-core/packages/diane_encoder)
+[12.610s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake module files
+[12.614s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/src/zed_pointcloud_publisher' returned '0': PYTHONPATH=/root/ros2_ws/build/zed_pointcloud_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/zed_pointcloud_publisher build --build-base /root/ros2_ws/build/zed_pointcloud_publisher/build install --record /root/ros2_ws/build/zed_pointcloud_publisher/install.log --single-version-externally-managed install_data
+[12.616s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake config files
+[12.618s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_pointcloud_publisher', 'cmake_prefix_path')
+[12.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/cmake_prefix_path.ps1'
+[12.625s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/cmake_prefix_path.dsv'
+[12.627s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/cmake_prefix_path.sh'
+[12.634s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib'
+[12.635s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_pointcloud_publisher', 'ld_library_path_lib')
+[12.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/ld_library_path_lib.ps1'
+[12.641s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/ld_library_path_lib.dsv'
+[12.644s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/ld_library_path_lib.sh'
+[12.647s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[12.647s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/pkgconfig/zed_pointcloud_publisher.pc'
+[12.649s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/python3.8/site-packages'
+[12.649s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_pointcloud_publisher', 'pythonpath')
+[12.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/pythonpath.ps1'
+[12.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/pythonpath.dsv'
+[12.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/zed_pointcloud_publisher/hook/pythonpath.sh'
+[12.660s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[12.660s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_pointcloud_publisher)
+[12.663s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/zed_pointcloud_publisher/package.ps1'
+[12.667s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/install/share/zed_pointcloud_publisher/package.dsv'
+[12.671s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/zed_pointcloud_publisher/package.sh'
+[12.675s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/zed_pointcloud_publisher/package.bash'
+[12.677s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/zed_pointcloud_publisher/package.zsh'
+[12.679s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/install/share/colcon-core/packages/zed_pointcloud_publisher)
+[101.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/build/diane_point_cloud_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/install/lib:/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --build /root/ros2_ws/build/diane_point_cloud_transport -- -j6 -l6
+[101.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/build/diane_point_cloud_transport': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/install/lib:/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --install /root/ros2_ws/build/diane_point_cloud_transport
+[101.733s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diane_point_cloud_transport)
+[101.737s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake module files
+[101.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/build/diane_point_cloud_transport' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/install/lib:/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --install /root/ros2_ws/build/diane_point_cloud_transport
+[101.744s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake config files
+[101.746s] Level 1:colcon.colcon_core.shell:create_environment_hook('diane_point_cloud_transport', 'cmake_prefix_path')
+[101.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/cmake_prefix_path.ps1'
+[101.753s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/cmake_prefix_path.dsv'
+[101.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/cmake_prefix_path.sh'
+[101.763s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib'
+[101.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('diane_point_cloud_transport', 'ld_library_path_lib')
+[101.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/ld_library_path_lib.ps1'
+[101.768s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/ld_library_path_lib.dsv'
+[101.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/ld_library_path_lib.sh'
+[101.773s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[101.774s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/pkgconfig/diane_point_cloud_transport.pc'
+[101.776s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/python3.8/site-packages'
+[101.776s] Level 1:colcon.colcon_core.shell:create_environment_hook('diane_point_cloud_transport', 'pythonpath')
+[101.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/pythonpath.ps1'
+[101.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/pythonpath.dsv'
+[101.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/pythonpath.sh'
+[101.786s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[101.789s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_point_cloud_transport/package.ps1'
+[101.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/install/share/diane_point_cloud_transport/package.dsv'
+[101.797s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_point_cloud_transport/package.sh'
+[101.801s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_point_cloud_transport/package.bash'
+[101.803s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_point_cloud_transport/package.zsh'
+[101.806s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/install/share/colcon-core/packages/diane_point_cloud_transport)
+[101.811s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diane_point_cloud_transport)
+[101.812s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake module files
+[101.816s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake config files
+[101.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('diane_point_cloud_transport', 'cmake_prefix_path')
+[101.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/cmake_prefix_path.ps1'
+[101.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/cmake_prefix_path.dsv'
+[101.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/cmake_prefix_path.sh'
+[101.829s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib'
+[101.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('diane_point_cloud_transport', 'ld_library_path_lib')
+[101.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/ld_library_path_lib.ps1'
+[101.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/ld_library_path_lib.dsv'
+[101.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/ld_library_path_lib.sh'
+[101.839s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[101.840s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/pkgconfig/diane_point_cloud_transport.pc'
+[101.841s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/python3.8/site-packages'
+[101.841s] Level 1:colcon.colcon_core.shell:create_environment_hook('diane_point_cloud_transport', 'pythonpath')
+[101.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/pythonpath.ps1'
+[101.845s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/pythonpath.dsv'
+[101.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/diane_point_cloud_transport/hook/pythonpath.sh'
+[101.849s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[101.851s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_point_cloud_transport/package.ps1'
+[101.855s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/install/share/diane_point_cloud_transport/package.dsv'
+[101.858s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_point_cloud_transport/package.sh'
+[101.862s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_point_cloud_transport/package.bash'
+[101.865s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/diane_point_cloud_transport/package.zsh'
+[101.868s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/install/share/colcon-core/packages/diane_point_cloud_transport)
+[101.873s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins' with build type 'ament_cmake'
+[101.875s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/src/point_cloud_transport_plugins-humble/point_cloud_transport_plugins'
+[101.878s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[101.880s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[102.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/build/point_cloud_transport_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/install/lib:/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --build /root/ros2_ws/build/point_cloud_transport_plugins -- -j6 -l6
+[102.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/build/point_cloud_transport_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/install/lib:/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --build /root/ros2_ws/build/point_cloud_transport_plugins -- -j6 -l6
+[102.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/build/point_cloud_transport_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/install/lib:/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --install /root/ros2_ws/build/point_cloud_transport_plugins
+[102.350s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_cloud_transport_plugins)
+[102.354s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake module files
+[102.359s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake config files
+[102.361s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport_plugins', 'cmake_prefix_path')
+[102.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/cmake_prefix_path.ps1'
+[102.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/build/point_cloud_transport_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/install/lib:/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --install /root/ros2_ws/build/point_cloud_transport_plugins
+[102.374s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/cmake_prefix_path.dsv'
+[102.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/cmake_prefix_path.sh'
+[102.384s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib'
+[102.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport_plugins', 'ld_library_path_lib')
+[102.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/ld_library_path_lib.ps1'
+[102.390s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/ld_library_path_lib.dsv'
+[102.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/ld_library_path_lib.sh'
+[102.396s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[102.397s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/pkgconfig/point_cloud_transport_plugins.pc'
+[102.401s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/python3.8/site-packages'
+[102.401s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport_plugins', 'pythonpath')
+[102.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/pythonpath.ps1'
+[102.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/pythonpath.dsv'
+[102.409s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/pythonpath.sh'
+[102.414s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[102.417s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_transport_plugins/package.ps1'
+[102.421s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/install/share/point_cloud_transport_plugins/package.dsv'
+[102.425s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_transport_plugins/package.sh'
+[102.429s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_transport_plugins/package.bash'
+[102.432s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_transport_plugins/package.zsh'
+[102.434s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/install/share/colcon-core/packages/point_cloud_transport_plugins)
+[102.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_cloud_transport_plugins)
+[102.441s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake module files
+[102.444s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install' for CMake config files
+[102.445s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport_plugins', 'cmake_prefix_path')
+[102.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/cmake_prefix_path.ps1'
+[102.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/cmake_prefix_path.dsv'
+[102.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/cmake_prefix_path.sh'
+[102.455s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib'
+[102.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport_plugins', 'ld_library_path_lib')
+[102.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/ld_library_path_lib.ps1'
+[102.459s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/ld_library_path_lib.dsv'
+[102.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/ld_library_path_lib.sh'
+[102.464s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[102.465s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/pkgconfig/point_cloud_transport_plugins.pc'
+[102.466s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/lib/python3.8/site-packages'
+[102.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport_plugins', 'pythonpath')
+[102.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/pythonpath.ps1'
+[102.469s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/pythonpath.dsv'
+[102.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/install/share/point_cloud_transport_plugins/hook/pythonpath.sh'
+[102.475s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/install/bin'
+[102.477s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_transport_plugins/package.ps1'
+[102.481s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/install/share/point_cloud_transport_plugins/package.dsv'
+[102.485s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_transport_plugins/package.sh'
+[102.488s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_transport_plugins/package.bash'
+[102.490s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/install/share/point_cloud_transport_plugins/package.zsh'
+[102.493s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/install/share/colcon-core/packages/point_cloud_transport_plugins)
+[102.495s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[102.497s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[102.498s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[102.499s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[102.548s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[102.549s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[102.549s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[102.550s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[102.585s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[102.588s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[102.594s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/install/local_setup.ps1'
+[102.604s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros2_ws/install/_local_setup_util_ps1.py'
+[102.614s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/install/setup.ps1'
+[102.621s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/install/local_setup.sh'
+[102.626s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros2_ws/install/_local_setup_util_sh.py'
+[102.631s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/install/setup.sh'
+[102.638s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/install/local_setup.bash'
+[102.642s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/install/setup.bash'
+[102.648s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/install/local_setup.zsh'
+[102.652s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/install/setup.zsh'

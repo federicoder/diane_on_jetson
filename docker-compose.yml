@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  zedros:
+    image: ros2-humble-tegra_ubuntu22  # sostituisci con il tag dell'immagine Humble che hai costruito
+    container_name: zedros2
+    hostname: zedros2
+    environment:
+      - ROS_DOMAIN_ID=0
+      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - ./zedros_ws:/root/ros2_ws
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    working_dir: /root/ros2_ws
+    command: >
+      bash -lc "\
+        # Sul host: xhost +local:docker && \
+        source /opt/ros/humble/setup.bash && \
+        source install/setup.bash && \
+        # ros2 launch zedros_package zedros_launch.py\
+      "
+    networks:
+      - ros2net
+
+  pointcloudtransport:
+    image: <your_rolling_image_name>  # sostituisci con il tag dell'immagine Rolling che hai costruito
+    container_name: pointcloudtransport
+    hostname: pointcloudtransport
+    depends_on:
+      - zedros
+    environment:
+      - ROS_DOMAIN_ID=0
+      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - ./pointcloud_ws:/ws
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    working_dir: /ws
+    command: >
+      bash -lc "\
+        # Sul host: xhost +local:docker && \
+        source /opt/ros/rolling/setup.bash && \
+        source install/setup.bash && \
+        # ros2 run pointcloud_transport pointcloud_publisher\
+      "
+    networks:
+      - ros2net
+
+networks:
+  ros2net:
+    driver: bridge
+

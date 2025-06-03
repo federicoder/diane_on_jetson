@@ -1,0 +1,1542 @@
+[0.000000] (-) TimerEvent: {}
+[0.001495] (diane_encoder) JobQueued: {'identifier': 'diane_encoder', 'dependencies': OrderedDict()}
+[0.001740] (point_cloud_interfaces) JobQueued: {'identifier': 'point_cloud_interfaces', 'dependencies': OrderedDict()}
+[0.004454] (zed_pointcloud_publisher) JobQueued: {'identifier': 'zed_pointcloud_publisher', 'dependencies': OrderedDict()}
+[0.004696] (diane_point_cloud_transport) JobQueued: {'identifier': 'diane_point_cloud_transport', 'dependencies': OrderedDict([('point_cloud_interfaces', '/root/ros2_ws/install')])}
+[0.004887] (point_cloud_transport_plugins) JobQueued: {'identifier': 'point_cloud_transport_plugins', 'dependencies': OrderedDict([('point_cloud_interfaces', '/root/ros2_ws/install'), ('diane_point_cloud_transport', '/root/ros2_ws/install')])}
+[0.005027] (point_cloud_interfaces) JobStarted: {'identifier': 'point_cloud_interfaces'}
+[0.096569] (diane_encoder) JobStarted: {'identifier': 'diane_encoder'}
+[0.105811] (-) TimerEvent: {}
+[0.171816] (zed_pointcloud_publisher) JobStarted: {'identifier': 'zed_pointcloud_publisher'}
+[0.206100] (-) TimerEvent: {}
+[0.258873] (point_cloud_interfaces) JobProgress: {'identifier': 'point_cloud_interfaces', 'progress': 'cmake'}
+[0.266901] (point_cloud_interfaces) JobProgress: {'identifier': 'point_cloud_interfaces', 'progress': 'build'}
+[0.272868] (point_cloud_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/build/point_cloud_interfaces', '--', '-j6', '-l6'], 'cwd': '/root/ros2_ws/build/point_cloud_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'xavier-1-c3lab'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/root/ros2_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/ros2_ws/build/point_cloud_interfaces'), ('CUDA_HOME', '/usr/local/cuda'), ('PYTHONPATH', '/root/ros2_ws/install/lib/python3.9/site-packages:/root/ros2_ws/install/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install:/opt/ros/humble')]), 'shell': False}
+[0.309576] (-) TimerEvent: {}
+[0.414985] (-) TimerEvent: {}
+[0.518892] (-) TimerEvent: {}
+[0.620194] (-) TimerEvent: {}
+[0.721367] (-) TimerEvent: {}
+[0.822973] (-) TimerEvent: {}
+[0.926668] (-) TimerEvent: {}
+[1.028574] (-) TimerEvent: {}
+[1.131149] (-) TimerEvent: {}
+[1.232714] (-) TimerEvent: {}
+[1.334033] (-) TimerEvent: {}
+[1.435304] (-) TimerEvent: {}
+[1.536636] (-) TimerEvent: {}
+[1.639570] (-) TimerEvent: {}
+[1.741987] (-) TimerEvent: {}
+[1.843785] (-) TimerEvent: {}
+[1.945751] (-) TimerEvent: {}
+[2.051903] (-) TimerEvent: {}
+[2.155978] (-) TimerEvent: {}
+[2.259838] (-) TimerEvent: {}
+[2.361114] (-) TimerEvent: {}
+[2.462072] (-) TimerEvent: {}
+[2.563170] (-) TimerEvent: {}
+[2.664387] (-) TimerEvent: {}
+[2.766041] (-) TimerEvent: {}
+[2.867104] (-) TimerEvent: {}
+[2.968355] (-) TimerEvent: {}
+[3.071268] (-) TimerEvent: {}
+[3.174462] (-) TimerEvent: {}
+[3.275927] (-) TimerEvent: {}
+[3.377054] (-) TimerEvent: {}
+[3.478305] (-) TimerEvent: {}
+[3.579442] (-) TimerEvent: {}
+[3.683331] (-) TimerEvent: {}
+[3.787135] (-) TimerEvent: {}
+[3.890499] (-) TimerEvent: {}
+[3.992193] (-) TimerEvent: {}
+[4.051688] (point_cloud_interfaces) StdoutLine: {'line': b'[  9%] Built target point_cloud_interfaces__rosidl_generator_c\n'}
+[4.057448] (point_cloud_interfaces) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_point_cloud_interfaces\n'}
+[4.058349] (point_cloud_interfaces) StdoutLine: {'line': b'[ 12%] Built target point_cloud_interfaces__cpp\n'}
+[4.059150] (point_cloud_interfaces) StdoutLine: {'line': b'[ 22%] Built target point_cloud_interfaces__rosidl_typesupport_c\n'}
+[4.059856] (point_cloud_interfaces) StdoutLine: {'line': b'[ 32%] Built target point_cloud_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.066821] (point_cloud_interfaces) StdoutLine: {'line': b'[ 41%] Built target point_cloud_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[4.067619] (point_cloud_interfaces) StdoutLine: {'line': b'[ 51%] Built target point_cloud_interfaces__rosidl_typesupport_cpp\n'}
+[4.068794] (point_cloud_interfaces) StdoutLine: {'line': b'[ 61%] Built target point_cloud_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.071259] (point_cloud_interfaces) StdoutLine: {'line': b'[ 70%] Built target point_cloud_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.076386] (point_cloud_interfaces) StdoutLine: {'line': b'[ 70%] Built target point_cloud_interfaces\n'}
+[4.079905] (point_cloud_interfaces) StdoutLine: {'line': b'[ 74%] Built target point_cloud_interfaces__py\n'}
+[4.082618] (point_cloud_interfaces) StdoutLine: {'line': b'[ 80%] Built target point_cloud_interfaces__rosidl_generator_py\n'}
+[4.084642] (point_cloud_interfaces) StdoutLine: {'line': b'[ 87%] Built target point_cloud_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.085432] (point_cloud_interfaces) StdoutLine: {'line': b'[ 93%] Built target point_cloud_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.086355] (point_cloud_interfaces) StdoutLine: {'line': b'[100%] Built target point_cloud_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.087957] (point_cloud_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[4.097544] (-) TimerEvent: {}
+[4.099784] (point_cloud_interfaces) StdoutLine: {'line': b'writing point_cloud_interfaces.egg-info/PKG-INFO\n'}
+[4.103124] (point_cloud_interfaces) StdoutLine: {'line': b'writing dependency_links to point_cloud_interfaces.egg-info/dependency_links.txt\n'}
+[4.103913] (point_cloud_interfaces) StdoutLine: {'line': b'writing top-level names to point_cloud_interfaces.egg-info/top_level.txt\n'}
+[4.104805] (point_cloud_interfaces) StdoutLine: {'line': b"reading manifest file 'point_cloud_interfaces.egg-info/SOURCES.txt'\n"}
+[4.105767] (point_cloud_interfaces) StdoutLine: {'line': b"writing manifest file 'point_cloud_interfaces.egg-info/SOURCES.txt'\n"}
+[4.106651] (point_cloud_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_point_cloud_interfaces_egg\n'}
+[4.107370] (point_cloud_interfaces) CommandEnded: {'returncode': 0}
+[4.110779] (point_cloud_interfaces) JobProgress: {'identifier': 'point_cloud_interfaces', 'progress': 'install'}
+[4.168156] (point_cloud_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/build/point_cloud_interfaces'], 'cwd': '/root/ros2_ws/build/point_cloud_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'xavier-1-c3lab'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/root/ros2_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/ros2_ws/build/point_cloud_interfaces'), ('CUDA_HOME', '/usr/local/cuda'), ('PYTHONPATH', '/root/ros2_ws/install/lib/python3.9/site-packages:/root/ros2_ws/install/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install:/opt/ros/humble')]), 'shell': False}
+[4.199571] (-) TimerEvent: {}
+[4.245527] (point_cloud_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.255563] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/rosidl_interfaces/point_cloud_interfaces\n'}
+[4.258454] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces\n'}
+[4.262721] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg\n'}
+[4.264157] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/compressed_point_cloud2.h\n'}
+[4.265077] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail\n'}
+[4.265745] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__struct.h\n'}
+[4.266271] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__functions.c\n'}
+[4.266776] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__type_support.h\n'}
+[4.267244] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__functions.h\n'}
+[4.267755] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.268292] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/library_path.sh\n'}
+[4.268812] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/library_path.dsv\n'}
+[4.272745] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_generator_c.so\n'}
+[4.275513] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces\n'}
+[4.276162] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg\n'}
+[4.276778] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.289047] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail\n'}
+[4.294854] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__rosidl_typesupport_fastrtps_c.h\n'}
+[4.306514] (-) TimerEvent: {}
+[4.312610] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.314199] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces\n'}
+[4.314782] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg\n'}
+[4.315267] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/compressed_point_cloud2.hpp\n'}
+[4.315744] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail\n'}
+[4.316272] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__traits.hpp\n'}
+[4.316842] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__builder.hpp\n'}
+[4.317292] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__struct.hpp\n'}
+[4.325700] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces\n'}
+[4.326788] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg\n'}
+[4.327464] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail\n'}
+[4.328310] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/dds_fastrtps\n'}
+[4.329932] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.330618] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.331118] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.331636] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces\n'}
+[4.332113] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg\n'}
+[4.336684] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.338906] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail\n'}
+[4.340092] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__type_support.c\n'}
+[4.343006] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__rosidl_typesupport_introspection_c.h\n'}
+[4.343689] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.348467] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_c.so\n'}
+[4.352967] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces\n'}
+[4.353730] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg\n'}
+[4.354276] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail\n'}
+[4.354759] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.355204] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/include/point_cloud_interfaces/point_cloud_interfaces/msg/detail/compressed_point_cloud2__type_support.cpp\n'}
+[4.360153] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.362584] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.364744] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/pythonpath.sh\n'}
+[4.365947] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/pythonpath.dsv\n'}
+[4.366825] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces-1.0.11-py3.9.egg-info\n'}
+[4.367553] (point_cloud_interfaces) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces-1.0.11-py3.9.egg-info/PKG-INFO\n'}
+[4.370200] (point_cloud_interfaces) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces-1.0.11-py3.9.egg-info/top_level.txt\n'}
+[4.372052] (point_cloud_interfaces) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces-1.0.11-py3.9.egg-info/dependency_links.txt\n'}
+[4.374157] (point_cloud_interfaces) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces-1.0.11-py3.9.egg-info/SOURCES.txt\n'}
+[4.376461] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces\n'}
+[4.378131] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.379115] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.382019] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/_point_cloud_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.382619] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/_point_cloud_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.383120] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.383585] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/_point_cloud_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[4.384010] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/__init__.py\n'}
+[4.386701] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/msg\n'}
+[4.387247] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/msg/_compressed_point_cloud2_s.c\n'}
+[4.387744] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/msg/_compressed_point_cloud2.py\n'}
+[4.388193] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/msg/__init__.py\n'}
+[4.388709] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/libpoint_cloud_interfaces__rosidl_generator_py.so\n'}
+[4.406721] (-) TimerEvent: {}
+[4.507745] (-) TimerEvent: {}
+[4.608996] (-) TimerEvent: {}
+[4.632377] (point_cloud_interfaces) StdoutLine: {'line': b"Listing '/root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces'...\n"}
+[4.633709] (point_cloud_interfaces) StdoutLine: {'line': b"Listing '/root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/msg'...\n"}
+[4.694398] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.702949] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.709650] (-) TimerEvent: {}
+[4.719066] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/python3.9/site-packages/point_cloud_interfaces/point_cloud_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[4.730102] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/lib/libpoint_cloud_interfaces__rosidl_generator_py.so\n'}
+[4.740021] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/msg/CompressedPointCloud2.idl\n'}
+[4.742988] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/msg/CompressedPointCloud2.msg\n'}
+[4.744077] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/package_run_dependencies/point_cloud_interfaces\n'}
+[4.745033] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/parent_prefix_path/point_cloud_interfaces\n'}
+[4.746391] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/ament_prefix_path.sh\n'}
+[4.747276] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/ament_prefix_path.dsv\n'}
+[4.750505] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/path.sh\n'}
+[4.751187] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/environment/path.dsv\n'}
+[4.751744] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/local_setup.bash\n'}
+[4.752326] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/local_setup.sh\n'}
+[4.752853] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/local_setup.zsh\n'}
+[4.753349] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/local_setup.dsv\n'}
+[4.753817] (point_cloud_interfaces) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/share/point_cloud_interfaces/package.dsv\n'}
+[4.754331] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/packages/point_cloud_interfaces\n'}
+[4.755924] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_generator_cExport.cmake\n'}
+[4.759340] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.770091] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.770959] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.783998] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_generator_cppExport.cmake\n'}
+[4.787422] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.789030] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.797143] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.804611] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.809866] (-) TimerEvent: {}
+[4.811387] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[4.815412] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.825654] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.841131] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.845156] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[4.847911] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.850975] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_generator_pyExport.cmake\n'}
+[4.852108] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/export_point_cloud_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.853675] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[4.854684] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.857544] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.870200] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.877494] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.879869] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.883002] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.885683] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfacesConfig.cmake\n'}
+[4.887920] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/cmake/point_cloud_interfacesConfig-version.cmake\n'}
+[4.889710] (point_cloud_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/share/point_cloud_interfaces/package.xml\n'}
+[4.918991] (point_cloud_interfaces) CommandEnded: {'returncode': 0}
+[4.923001] (-) TimerEvent: {}
+[5.027024] (-) TimerEvent: {}
+[5.121063] (point_cloud_interfaces) JobEnded: {'identifier': 'point_cloud_interfaces', 'rc': 0}
+[5.131275] (-) TimerEvent: {}
+[5.132396] (diane_point_cloud_transport) JobStarted: {'identifier': 'diane_point_cloud_transport'}
+[5.228657] (diane_point_cloud_transport) JobProgress: {'identifier': 'diane_point_cloud_transport', 'progress': 'cmake'}
+[5.236308] (-) TimerEvent: {}
+[5.251980] (diane_point_cloud_transport) JobProgress: {'identifier': 'diane_point_cloud_transport', 'progress': 'build'}
+[5.253284] (diane_point_cloud_transport) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/build/diane_point_cloud_transport', '--', '-j6', '-l6'], 'cwd': '/root/ros2_ws/build/diane_point_cloud_transport', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'xavier-1-c3lab'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/install/lib:/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/ros2_ws/build/diane_point_cloud_transport'), ('CUDA_HOME', '/usr/local/cuda'), ('PYTHONPATH', '/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install:/opt/ros/humble')]), 'shell': False}
+[5.336658] (-) TimerEvent: {}
+[5.439687] (-) TimerEvent: {}
+[5.544417] (-) TimerEvent: {}
+[5.647163] (-) TimerEvent: {}
+[5.752296] (-) TimerEvent: {}
+[5.856800] (-) TimerEvent: {}
+[5.958703] (-) TimerEvent: {}
+[6.059753] (-) TimerEvent: {}
+[6.161291] (-) TimerEvent: {}
+[6.262342] (-) TimerEvent: {}
+[6.363441] (-) TimerEvent: {}
+[6.464778] (-) TimerEvent: {}
+[6.566819] (-) TimerEvent: {}
+[6.668088] (-) TimerEvent: {}
+[6.713129] (diane_point_cloud_transport) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target diane_point_cloud_transport\x1b[0m\n'}
+[6.768471] (-) TimerEvent: {}
+[6.871087] (-) TimerEvent: {}
+[6.972893] (-) TimerEvent: {}
+[7.074055] (-) TimerEvent: {}
+[7.175676] (-) TimerEvent: {}
+[7.229745] (diane_encoder) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/diane_encoder', 'build', '--build-base', '/root/ros2_ws/build/diane_encoder/build', 'install', '--record', '/root/ros2_ws/build/diane_encoder/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/ros2_ws/src/diane_encoder', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'HOSTNAME': 'xavier-1-c3lab', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/root/ros2_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'COLCON_PREFIX_PATH': '/root/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': 'unix:1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/root/ros2_ws/install:/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/root/ros2_ws/build/diane_encoder', 'CUDA_HOME': '/usr/local/cuda', 'PYTHONPATH': '/root/ros2_ws/build/diane_encoder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/root/ros2_ws/install/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ros2_ws/install'}, 'shell': False}
+[7.276731] (-) TimerEvent: {}
+[7.384168] (-) TimerEvent: {}
+[7.489945] (-) TimerEvent: {}
+[7.593934] (-) TimerEvent: {}
+[7.698679] (-) TimerEvent: {}
+[7.755532] (zed_pointcloud_publisher) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/zed_pointcloud_publisher', 'build', '--build-base', '/root/ros2_ws/build/zed_pointcloud_publisher/build', 'install', '--record', '/root/ros2_ws/build/zed_pointcloud_publisher/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/ros2_ws/src/zed_pointcloud_publisher', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'HOSTNAME': 'xavier-1-c3lab', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:/usr/local/lib/python3.8/dist-packages/torch/lib:/root/ros2_ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'COLCON_PREFIX_PATH': '/root/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': 'unix:1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/root/ros2_ws/install:/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/root/ros2_ws/build/zed_pointcloud_publisher', 'CUDA_HOME': '/usr/local/cuda', 'PYTHONPATH': '/root/ros2_ws/build/zed_pointcloud_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/lib/python3.8/site-packages:/root/ros2_ws/install/lib/python3.9/site-packages:/root/ros2_ws/install/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ros2_ws/install'}, 'shell': False}
+[7.799440] (-) TimerEvent: {}
+[7.905466] (-) TimerEvent: {}
+[8.009199] (-) TimerEvent: {}
+[8.110151] (-) TimerEvent: {}
+[8.211335] (-) TimerEvent: {}
+[8.313061] (-) TimerEvent: {}
+[8.414440] (-) TimerEvent: {}
+[8.515466] (-) TimerEvent: {}
+[8.617683] (-) TimerEvent: {}
+[8.720169] (-) TimerEvent: {}
+[8.821603] (-) TimerEvent: {}
+[8.923063] (-) TimerEvent: {}
+[9.024480] (-) TimerEvent: {}
+[9.125693] (-) TimerEvent: {}
+[9.136530] (diane_encoder) StdoutLine: {'line': b'running egg_info\n'}
+[9.143273] (diane_encoder) StdoutLine: {'line': b'writing ../../build/diane_encoder/diane_encoder.egg-info/PKG-INFO\n'}
+[9.153536] (diane_encoder) StdoutLine: {'line': b'writing dependency_links to ../../build/diane_encoder/diane_encoder.egg-info/dependency_links.txt\n'}
+[9.156960] (diane_encoder) StdoutLine: {'line': b'writing entry points to ../../build/diane_encoder/diane_encoder.egg-info/entry_points.txt\n'}
+[9.173400] (diane_encoder) StdoutLine: {'line': b'writing requirements to ../../build/diane_encoder/diane_encoder.egg-info/requires.txt\n'}
+[9.181285] (diane_encoder) StdoutLine: {'line': b'writing top-level names to ../../build/diane_encoder/diane_encoder.egg-info/top_level.txt\n'}
+[9.226362] (-) TimerEvent: {}
+[9.248667] (zed_pointcloud_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[9.255826] (zed_pointcloud_publisher) StdoutLine: {'line': b'writing ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/PKG-INFO\n'}
+[9.273538] (zed_pointcloud_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/dependency_links.txt\n'}
+[9.277978] (zed_pointcloud_publisher) StdoutLine: {'line': b'writing entry points to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/entry_points.txt\n'}
+[9.280715] (zed_pointcloud_publisher) StdoutLine: {'line': b'writing requirements to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/requires.txt\n'}
+[9.283712] (zed_pointcloud_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/top_level.txt\n'}
+[9.326585] (-) TimerEvent: {}
+[9.371548] (diane_encoder) StdoutLine: {'line': b"reading manifest file '../../build/diane_encoder/diane_encoder.egg-info/SOURCES.txt'\n"}
+[9.383383] (diane_encoder) StdoutLine: {'line': b"writing manifest file '../../build/diane_encoder/diane_encoder.egg-info/SOURCES.txt'\n"}
+[9.390313] (diane_encoder) StdoutLine: {'line': b'running build\n'}
+[9.391982] (diane_encoder) StdoutLine: {'line': b'running build_py\n'}
+[9.399969] (diane_encoder) StdoutLine: {'line': b'running install\n'}
+[9.405973] (diane_encoder) StdoutLine: {'line': b'running install_lib\n'}
+[9.411770] (diane_encoder) StdoutLine: {'line': b'running install_data\n'}
+[9.414895] (diane_encoder) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.426088] (diane_encoder) StdoutLine: {'line': b"removing '/root/ros2_ws/install/lib/python3.8/site-packages/diane_encoder-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.427804] (-) TimerEvent: {}
+[9.429068] (diane_encoder) StdoutLine: {'line': b'Copying ../../build/diane_encoder/diane_encoder.egg-info to /root/ros2_ws/install/lib/python3.8/site-packages/diane_encoder-0.0.0-py3.8.egg-info\n'}
+[9.442992] (diane_encoder) StdoutLine: {'line': b'running install_scripts\n'}
+[9.489903] (zed_pointcloud_publisher) StdoutLine: {'line': b"reading manifest file '../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/SOURCES.txt'\n"}
+[9.497294] (zed_pointcloud_publisher) StdoutLine: {'line': b"writing manifest file '../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/SOURCES.txt'\n"}
+[9.499311] (zed_pointcloud_publisher) StdoutLine: {'line': b'running build\n'}
+[9.499990] (zed_pointcloud_publisher) StdoutLine: {'line': b'running build_py\n'}
+[9.506649] (zed_pointcloud_publisher) StdoutLine: {'line': b'running install\n'}
+[9.512994] (zed_pointcloud_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[9.528842] (zed_pointcloud_publisher) StdoutLine: {'line': b'running install_data\n'}
+[9.529639] (-) TimerEvent: {}
+[9.530211] (zed_pointcloud_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.540346] (zed_pointcloud_publisher) StdoutLine: {'line': b"removing '/root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.541517] (zed_pointcloud_publisher) StdoutLine: {'line': b'Copying ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info to /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher-0.0.0-py3.8.egg-info\n'}
+[9.550245] (zed_pointcloud_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[9.578740] (diane_encoder) StdoutLine: {'line': b'Installing diane_publisher script to /root/ros2_ws/install/lib/diane_encoder\n'}
+[9.583406] (diane_encoder) StdoutLine: {'line': b"writing list of installed files to '/root/ros2_ws/build/diane_encoder/install.log'\n"}
+[9.629933] (-) TimerEvent: {}
+[9.650856] (zed_pointcloud_publisher) StdoutLine: {'line': b'Installing zed_pointcloud_publisher script to /root/ros2_ws/install/lib/zed_pointcloud_publisher\n'}
+[9.655349] (zed_pointcloud_publisher) StdoutLine: {'line': b"writing list of installed files to '/root/ros2_ws/build/zed_pointcloud_publisher/install.log'\n"}
+[9.733601] (diane_encoder) CommandEnded: {'returncode': 0}
+[9.738531] (-) TimerEvent: {}
+[9.822452] (diane_encoder) JobEnded: {'identifier': 'diane_encoder', 'rc': 0}
+[9.830430] (zed_pointcloud_publisher) CommandEnded: {'returncode': 0}
+[9.839513] (-) TimerEvent: {}
+[9.897851] (zed_pointcloud_publisher) JobEnded: {'identifier': 'zed_pointcloud_publisher', 'rc': 0}
+[9.939881] (-) TimerEvent: {}
+[10.040933] (-) TimerEvent: {}
+[10.142791] (-) TimerEvent: {}
+[10.243968] (-) TimerEvent: {}
+[10.345100] (-) TimerEvent: {}
+[10.446271] (-) TimerEvent: {}
+[10.547632] (-) TimerEvent: {}
+[10.648707] (-) TimerEvent: {}
+[10.749715] (-) TimerEvent: {}
+[10.850706] (-) TimerEvent: {}
+[10.951883] (-) TimerEvent: {}
+[11.052980] (-) TimerEvent: {}
+[11.154032] (-) TimerEvent: {}
+[11.255036] (-) TimerEvent: {}
+[11.356010] (-) TimerEvent: {}
+[11.457425] (-) TimerEvent: {}
+[11.558641] (-) TimerEvent: {}
+[11.659832] (-) TimerEvent: {}
+[11.760905] (-) TimerEvent: {}
+[11.863213] (-) TimerEvent: {}
+[11.964623] (-) TimerEvent: {}
+[12.065880] (-) TimerEvent: {}
+[12.167286] (-) TimerEvent: {}
+[12.268841] (-) TimerEvent: {}
+[12.371913] (-) TimerEvent: {}
+[12.476150] (-) TimerEvent: {}
+[12.579209] (-) TimerEvent: {}
+[12.680482] (-) TimerEvent: {}
+[12.781462] (-) TimerEvent: {}
+[12.882533] (-) TimerEvent: {}
+[12.984544] (-) TimerEvent: {}
+[13.086503] (-) TimerEvent: {}
+[13.187968] (-) TimerEvent: {}
+[13.289699] (-) TimerEvent: {}
+[13.392780] (-) TimerEvent: {}
+[13.495309] (-) TimerEvent: {}
+[13.596716] (-) TimerEvent: {}
+[13.698483] (-) TimerEvent: {}
+[13.799796] (-) TimerEvent: {}
+[13.853509] (diane_point_cloud_transport) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/diane_point_cloud_transport.dir/src/diane_encoder.cpp.o\x1b[0m\n'}
+[13.900415] (-) TimerEvent: {}
+[13.919085] (diane_point_cloud_transport) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/diane_point_cloud_transport.dir/src/diane_publisher.cpp.o\x1b[0m\n'}
+[14.001026] (-) TimerEvent: {}
+[14.102130] (-) TimerEvent: {}
+[14.203389] (-) TimerEvent: {}
+[14.304701] (-) TimerEvent: {}
+[14.406158] (-) TimerEvent: {}
+[14.507826] (-) TimerEvent: {}
+[14.609181] (-) TimerEvent: {}
+[14.710777] (-) TimerEvent: {}
+[14.813723] (-) TimerEvent: {}
+[14.915676] (-) TimerEvent: {}
+[15.018116] (-) TimerEvent: {}
+[15.121149] (-) TimerEvent: {}
+[15.222729] (-) TimerEvent: {}
+[15.325129] (-) TimerEvent: {}
+[15.426846] (-) TimerEvent: {}
+[15.528259] (-) TimerEvent: {}
+[15.629284] (-) TimerEvent: {}
+[15.730600] (-) TimerEvent: {}
+[15.832756] (-) TimerEvent: {}
+[15.934123] (-) TimerEvent: {}
+[16.035192] (-) TimerEvent: {}
+[16.136452] (-) TimerEvent: {}
+[16.239708] (-) TimerEvent: {}
+[16.342457] (-) TimerEvent: {}
+[16.443811] (-) TimerEvent: {}
+[16.546444] (-) TimerEvent: {}
+[16.648365] (-) TimerEvent: {}
+[16.749534] (-) TimerEvent: {}
+[16.850796] (-) TimerEvent: {}
+[16.952294] (-) TimerEvent: {}
+[17.053820] (-) TimerEvent: {}
+[17.154973] (-) TimerEvent: {}
+[17.255982] (-) TimerEvent: {}
+[17.358873] (-) TimerEvent: {}
+[17.459958] (-) TimerEvent: {}
+[17.562062] (-) TimerEvent: {}
+[17.664314] (-) TimerEvent: {}
+[17.765712] (-) TimerEvent: {}
+[17.867848] (-) TimerEvent: {}
+[17.970266] (-) TimerEvent: {}
+[18.071909] (-) TimerEvent: {}
+[18.173649] (-) TimerEvent: {}
+[18.275479] (-) TimerEvent: {}
+[18.377215] (-) TimerEvent: {}
+[18.478809] (-) TimerEvent: {}
+[18.579966] (-) TimerEvent: {}
+[18.681276] (-) TimerEvent: {}
+[18.782437] (-) TimerEvent: {}
+[18.883835] (-) TimerEvent: {}
+[18.985044] (-) TimerEvent: {}
+[19.086168] (-) TimerEvent: {}
+[19.187272] (-) TimerEvent: {}
+[19.288946] (-) TimerEvent: {}
+[19.390103] (-) TimerEvent: {}
+[19.492037] (-) TimerEvent: {}
+[19.594422] (-) TimerEvent: {}
+[19.695873] (-) TimerEvent: {}
+[19.797271] (-) TimerEvent: {}
+[19.899231] (-) TimerEvent: {}
+[20.000351] (-) TimerEvent: {}
+[20.101396] (-) TimerEvent: {}
+[20.202641] (-) TimerEvent: {}
+[20.307322] (-) TimerEvent: {}
+[20.410234] (-) TimerEvent: {}
+[20.515737] (-) TimerEvent: {}
+[20.621021] (-) TimerEvent: {}
+[20.727433] (-) TimerEvent: {}
+[20.829060] (-) TimerEvent: {}
+[20.932772] (-) TimerEvent: {}
+[21.040515] (-) TimerEvent: {}
+[21.144876] (-) TimerEvent: {}
+[21.247353] (-) TimerEvent: {}
+[21.348745] (-) TimerEvent: {}
+[21.450517] (-) TimerEvent: {}
+[21.552324] (-) TimerEvent: {}
+[21.653479] (-) TimerEvent: {}
+[21.755105] (-) TimerEvent: {}
+[21.858199] (-) TimerEvent: {}
+[21.960017] (-) TimerEvent: {}
+[22.061332] (-) TimerEvent: {}
+[22.162708] (-) TimerEvent: {}
+[22.263871] (-) TimerEvent: {}
+[22.366060] (-) TimerEvent: {}
+[22.468565] (-) TimerEvent: {}
+[22.574434] (-) TimerEvent: {}
+[22.677358] (-) TimerEvent: {}
+[22.779692] (-) TimerEvent: {}
+[22.884613] (-) TimerEvent: {}
+[22.985917] (-) TimerEvent: {}
+[23.087137] (-) TimerEvent: {}
+[23.188642] (-) TimerEvent: {}
+[23.290700] (-) TimerEvent: {}
+[23.394523] (-) TimerEvent: {}
+[23.497061] (-) TimerEvent: {}
+[23.598720] (-) TimerEvent: {}
+[23.700345] (-) TimerEvent: {}
+[23.802929] (-) TimerEvent: {}
+[23.919052] (-) TimerEvent: {}
+[24.022678] (-) TimerEvent: {}
+[24.126258] (-) TimerEvent: {}
+[24.227860] (-) TimerEvent: {}
+[24.333590] (-) TimerEvent: {}
+[24.435899] (-) TimerEvent: {}
+[24.537422] (-) TimerEvent: {}
+[24.639164] (-) TimerEvent: {}
+[24.741147] (-) TimerEvent: {}
+[24.842527] (-) TimerEvent: {}
+[24.947212] (-) TimerEvent: {}
+[25.052594] (-) TimerEvent: {}
+[25.153746] (-) TimerEvent: {}
+[25.256632] (-) TimerEvent: {}
+[25.357973] (-) TimerEvent: {}
+[25.461602] (-) TimerEvent: {}
+[25.564959] (-) TimerEvent: {}
+[25.668637] (-) TimerEvent: {}
+[25.772306] (-) TimerEvent: {}
+[25.875377] (-) TimerEvent: {}
+[25.978550] (-) TimerEvent: {}
+[26.080581] (-) TimerEvent: {}
+[26.181808] (-) TimerEvent: {}
+[26.282920] (-) TimerEvent: {}
+[26.385672] (-) TimerEvent: {}
+[26.487699] (-) TimerEvent: {}
+[26.589793] (-) TimerEvent: {}
+[26.692281] (-) TimerEvent: {}
+[26.793432] (-) TimerEvent: {}
+[26.894655] (-) TimerEvent: {}
+[26.995951] (-) TimerEvent: {}
+[27.097529] (-) TimerEvent: {}
+[27.199092] (-) TimerEvent: {}
+[27.300486] (-) TimerEvent: {}
+[27.402796] (-) TimerEvent: {}
+[27.505413] (-) TimerEvent: {}
+[27.607157] (-) TimerEvent: {}
+[27.709779] (-) TimerEvent: {}
+[27.811778] (-) TimerEvent: {}
+[27.915214] (-) TimerEvent: {}
+[28.016394] (-) TimerEvent: {}
+[28.117566] (-) TimerEvent: {}
+[28.218938] (-) TimerEvent: {}
+[28.323336] (-) TimerEvent: {}
+[28.425348] (-) TimerEvent: {}
+[28.528308] (-) TimerEvent: {}
+[28.631534] (-) TimerEvent: {}
+[28.733572] (-) TimerEvent: {}
+[28.835973] (-) TimerEvent: {}
+[28.937346] (-) TimerEvent: {}
+[29.038904] (-) TimerEvent: {}
+[29.140084] (-) TimerEvent: {}
+[29.242336] (-) TimerEvent: {}
+[29.344814] (-) TimerEvent: {}
+[29.447525] (-) TimerEvent: {}
+[29.549452] (-) TimerEvent: {}
+[29.655131] (-) TimerEvent: {}
+[29.758541] (-) TimerEvent: {}
+[29.859987] (-) TimerEvent: {}
+[29.962907] (-) TimerEvent: {}
+[30.064410] (-) TimerEvent: {}
+[30.165813] (-) TimerEvent: {}
+[30.269753] (-) TimerEvent: {}
+[30.371660] (-) TimerEvent: {}
+[30.473538] (-) TimerEvent: {}
+[30.577054] (-) TimerEvent: {}
+[30.678474] (-) TimerEvent: {}
+[30.779839] (-) TimerEvent: {}
+[30.881435] (-) TimerEvent: {}
+[30.982528] (-) TimerEvent: {}
+[31.083752] (-) TimerEvent: {}
+[31.185787] (-) TimerEvent: {}
+[31.287194] (-) TimerEvent: {}
+[31.388787] (-) TimerEvent: {}
+[31.490516] (-) TimerEvent: {}
+[31.592636] (-) TimerEvent: {}
+[31.697860] (-) TimerEvent: {}
+[31.801112] (-) TimerEvent: {}
+[31.902260] (-) TimerEvent: {}
+[32.006201] (-) TimerEvent: {}
+[32.109937] (-) TimerEvent: {}
+[32.212883] (-) TimerEvent: {}
+[32.313909] (-) TimerEvent: {}
+[32.415058] (-) TimerEvent: {}
+[32.516047] (-) TimerEvent: {}
+[32.618402] (-) TimerEvent: {}
+[32.721266] (-) TimerEvent: {}
+[32.824639] (-) TimerEvent: {}
+[32.926789] (-) TimerEvent: {}
+[33.028551] (-) TimerEvent: {}
+[33.130020] (-) TimerEvent: {}
+[33.231654] (-) TimerEvent: {}
+[33.333986] (-) TimerEvent: {}
+[33.436081] (-) TimerEvent: {}
+[33.537767] (-) TimerEvent: {}
+[33.639645] (-) TimerEvent: {}
+[33.743118] (-) TimerEvent: {}
+[33.844912] (-) TimerEvent: {}
+[33.954363] (-) TimerEvent: {}
+[34.056013] (-) TimerEvent: {}
+[34.159029] (-) TimerEvent: {}
+[34.260817] (-) TimerEvent: {}
+[34.362190] (-) TimerEvent: {}
+[34.464402] (-) TimerEvent: {}
+[34.566503] (-) TimerEvent: {}
+[34.668555] (-) TimerEvent: {}
+[34.773159] (-) TimerEvent: {}
+[34.874547] (-) TimerEvent: {}
+[34.976172] (-) TimerEvent: {}
+[35.077848] (-) TimerEvent: {}
+[35.179377] (-) TimerEvent: {}
+[35.281579] (-) TimerEvent: {}
+[35.382632] (-) TimerEvent: {}
+[35.483701] (-) TimerEvent: {}
+[35.585128] (-) TimerEvent: {}
+[35.686896] (-) TimerEvent: {}
+[35.788017] (-) TimerEvent: {}
+[35.889383] (-) TimerEvent: {}
+[35.991312] (-) TimerEvent: {}
+[36.092453] (-) TimerEvent: {}
+[36.193655] (-) TimerEvent: {}
+[36.294828] (-) TimerEvent: {}
+[36.395977] (-) TimerEvent: {}
+[36.504661] (-) TimerEvent: {}
+[36.607277] (-) TimerEvent: {}
+[36.708561] (-) TimerEvent: {}
+[36.809627] (-) TimerEvent: {}
+[36.914178] (-) TimerEvent: {}
+[37.015347] (-) TimerEvent: {}
+[37.117670] (-) TimerEvent: {}
+[37.220744] (-) TimerEvent: {}
+[37.324117] (-) TimerEvent: {}
+[37.426021] (-) TimerEvent: {}
+[37.528077] (-) TimerEvent: {}
+[37.642516] (-) TimerEvent: {}
+[37.744148] (-) TimerEvent: {}
+[37.845869] (-) TimerEvent: {}
+[37.947010] (-) TimerEvent: {}
+[38.048479] (-) TimerEvent: {}
+[38.152492] (-) TimerEvent: {}
+[38.253602] (-) TimerEvent: {}
+[38.354934] (-) TimerEvent: {}
+[38.456251] (-) TimerEvent: {}
+[38.557324] (-) TimerEvent: {}
+[38.659299] (-) TimerEvent: {}
+[38.760751] (-) TimerEvent: {}
+[38.864039] (-) TimerEvent: {}
+[38.966503] (-) TimerEvent: {}
+[39.068041] (-) TimerEvent: {}
+[39.169810] (-) TimerEvent: {}
+[39.272718] (-) TimerEvent: {}
+[39.373859] (-) TimerEvent: {}
+[39.476807] (-) TimerEvent: {}
+[39.580011] (-) TimerEvent: {}
+[39.683349] (-) TimerEvent: {}
+[39.785978] (-) TimerEvent: {}
+[39.887935] (-) TimerEvent: {}
+[39.991185] (-) TimerEvent: {}
+[40.093114] (-) TimerEvent: {}
+[40.195834] (-) TimerEvent: {}
+[40.297737] (-) TimerEvent: {}
+[40.399863] (-) TimerEvent: {}
+[40.502446] (-) TimerEvent: {}
+[40.605565] (-) TimerEvent: {}
+[40.707759] (-) TimerEvent: {}
+[40.811878] (-) TimerEvent: {}
+[40.914598] (-) TimerEvent: {}
+[41.017459] (-) TimerEvent: {}
+[41.119668] (-) TimerEvent: {}
+[41.221774] (-) TimerEvent: {}
+[41.324822] (-) TimerEvent: {}
+[41.433249] (-) TimerEvent: {}
+[41.534741] (-) TimerEvent: {}
+[41.642201] (-) TimerEvent: {}
+[41.743272] (-) TimerEvent: {}
+[41.845070] (-) TimerEvent: {}
+[41.956133] (-) TimerEvent: {}
+[42.058609] (-) TimerEvent: {}
+[42.160764] (-) TimerEvent: {}
+[42.262361] (-) TimerEvent: {}
+[42.364061] (-) TimerEvent: {}
+[42.465842] (-) TimerEvent: {}
+[42.567284] (-) TimerEvent: {}
+[42.668624] (-) TimerEvent: {}
+[42.772571] (-) TimerEvent: {}
+[42.874043] (-) TimerEvent: {}
+[42.976037] (-) TimerEvent: {}
+[43.077435] (-) TimerEvent: {}
+[43.180412] (-) TimerEvent: {}
+[43.282276] (-) TimerEvent: {}
+[43.384387] (-) TimerEvent: {}
+[43.485934] (-) TimerEvent: {}
+[43.587977] (-) TimerEvent: {}
+[43.691628] (-) TimerEvent: {}
+[43.795279] (-) TimerEvent: {}
+[43.897401] (-) TimerEvent: {}
+[43.998665] (-) TimerEvent: {}
+[44.100459] (-) TimerEvent: {}
+[44.201731] (-) TimerEvent: {}
+[44.304588] (-) TimerEvent: {}
+[44.405742] (-) TimerEvent: {}
+[44.507972] (-) TimerEvent: {}
+[44.610886] (-) TimerEvent: {}
+[44.713037] (-) TimerEvent: {}
+[44.817572] (-) TimerEvent: {}
+[44.918752] (-) TimerEvent: {}
+[45.020561] (-) TimerEvent: {}
+[45.122975] (-) TimerEvent: {}
+[45.224933] (-) TimerEvent: {}
+[45.326618] (-) TimerEvent: {}
+[45.431275] (-) TimerEvent: {}
+[45.532695] (-) TimerEvent: {}
+[45.633938] (-) TimerEvent: {}
+[45.738218] (-) TimerEvent: {}
+[45.841155] (-) TimerEvent: {}
+[45.942277] (-) TimerEvent: {}
+[46.043436] (-) TimerEvent: {}
+[46.144623] (-) TimerEvent: {}
+[46.248602] (-) TimerEvent: {}
+[46.349839] (-) TimerEvent: {}
+[46.450927] (-) TimerEvent: {}
+[46.552107] (-) TimerEvent: {}
+[46.654431] (-) TimerEvent: {}
+[46.758873] (-) TimerEvent: {}
+[46.860960] (-) TimerEvent: {}
+[46.973456] (-) TimerEvent: {}
+[47.076426] (-) TimerEvent: {}
+[47.181479] (-) TimerEvent: {}
+[47.283405] (-) TimerEvent: {}
+[47.384814] (-) TimerEvent: {}
+[47.486070] (-) TimerEvent: {}
+[47.589019] (-) TimerEvent: {}
+[47.691624] (-) TimerEvent: {}
+[47.792766] (-) TimerEvent: {}
+[47.893767] (-) TimerEvent: {}
+[47.994917] (-) TimerEvent: {}
+[48.097708] (-) TimerEvent: {}
+[48.199274] (-) TimerEvent: {}
+[48.304959] (-) TimerEvent: {}
+[48.406293] (-) TimerEvent: {}
+[48.509571] (-) TimerEvent: {}
+[48.611193] (-) TimerEvent: {}
+[48.713878] (-) TimerEvent: {}
+[48.815318] (-) TimerEvent: {}
+[48.917635] (-) TimerEvent: {}
+[49.020138] (-) TimerEvent: {}
+[49.121881] (-) TimerEvent: {}
+[49.225412] (-) TimerEvent: {}
+[49.329482] (-) TimerEvent: {}
+[49.432516] (-) TimerEvent: {}
+[49.534262] (-) TimerEvent: {}
+[49.640139] (-) TimerEvent: {}
+[49.744552] (-) TimerEvent: {}
+[49.848029] (-) TimerEvent: {}
+[49.951703] (-) TimerEvent: {}
+[50.055400] (-) TimerEvent: {}
+[50.157398] (-) TimerEvent: {}
+[50.258975] (-) TimerEvent: {}
+[50.360401] (-) TimerEvent: {}
+[50.461972] (-) TimerEvent: {}
+[50.564161] (-) TimerEvent: {}
+[50.666594] (-) TimerEvent: {}
+[50.767759] (-) TimerEvent: {}
+[50.869188] (-) TimerEvent: {}
+[50.970387] (-) TimerEvent: {}
+[51.075534] (-) TimerEvent: {}
+[51.178003] (-) TimerEvent: {}
+[51.279655] (-) TimerEvent: {}
+[51.382698] (-) TimerEvent: {}
+[51.492081] (-) TimerEvent: {}
+[51.598139] (-) TimerEvent: {}
+[51.702155] (-) TimerEvent: {}
+[51.813372] (-) TimerEvent: {}
+[51.916443] (-) TimerEvent: {}
+[52.020615] (-) TimerEvent: {}
+[52.124075] (-) TimerEvent: {}
+[52.227077] (-) TimerEvent: {}
+[52.333076] (-) TimerEvent: {}
+[52.437220] (-) TimerEvent: {}
+[52.539540] (-) TimerEvent: {}
+[52.644179] (-) TimerEvent: {}
+[52.748841] (-) TimerEvent: {}
+[52.854313] (-) TimerEvent: {}
+[52.956896] (-) TimerEvent: {}
+[53.058835] (-) TimerEvent: {}
+[53.160623] (-) TimerEvent: {}
+[53.262066] (-) TimerEvent: {}
+[53.363744] (-) TimerEvent: {}
+[53.465284] (-) TimerEvent: {}
+[53.567034] (-) TimerEvent: {}
+[53.669134] (-) TimerEvent: {}
+[53.770889] (-) TimerEvent: {}
+[53.874162] (-) TimerEvent: {}
+[53.976600] (-) TimerEvent: {}
+[54.078007] (-) TimerEvent: {}
+[54.179747] (-) TimerEvent: {}
+[54.282173] (-) TimerEvent: {}
+[54.387863] (-) TimerEvent: {}
+[54.489448] (-) TimerEvent: {}
+[54.591149] (-) TimerEvent: {}
+[54.693779] (-) TimerEvent: {}
+[54.795757] (-) TimerEvent: {}
+[54.897487] (-) TimerEvent: {}
+[54.999031] (-) TimerEvent: {}
+[55.101255] (-) TimerEvent: {}
+[55.203202] (-) TimerEvent: {}
+[55.304965] (-) TimerEvent: {}
+[55.407684] (-) TimerEvent: {}
+[55.511644] (-) TimerEvent: {}
+[55.613809] (-) TimerEvent: {}
+[55.716423] (-) TimerEvent: {}
+[55.819372] (-) TimerEvent: {}
+[55.921882] (-) TimerEvent: {}
+[56.023290] (-) TimerEvent: {}
+[56.126054] (-) TimerEvent: {}
+[56.228594] (-) TimerEvent: {}
+[56.332952] (-) TimerEvent: {}
+[56.437019] (-) TimerEvent: {}
+[56.539547] (-) TimerEvent: {}
+[56.642455] (-) TimerEvent: {}
+[56.745933] (-) TimerEvent: {}
+[56.847577] (-) TimerEvent: {}
+[56.949449] (-) TimerEvent: {}
+[57.060797] (-) TimerEvent: {}
+[57.162232] (-) TimerEvent: {}
+[57.264598] (-) TimerEvent: {}
+[57.367525] (-) TimerEvent: {}
+[57.470763] (-) TimerEvent: {}
+[57.572078] (-) TimerEvent: {}
+[57.673467] (-) TimerEvent: {}
+[57.774759] (-) TimerEvent: {}
+[57.876594] (-) TimerEvent: {}
+[57.978530] (-) TimerEvent: {}
+[58.080306] (-) TimerEvent: {}
+[58.181454] (-) TimerEvent: {}
+[58.283419] (-) TimerEvent: {}
+[58.386133] (-) TimerEvent: {}
+[58.488992] (-) TimerEvent: {}
+[58.590369] (-) TimerEvent: {}
+[58.692995] (-) TimerEvent: {}
+[58.794748] (-) TimerEvent: {}
+[58.897131] (-) TimerEvent: {}
+[58.999262] (-) TimerEvent: {}
+[59.101032] (-) TimerEvent: {}
+[59.202858] (-) TimerEvent: {}
+[59.307124] (-) TimerEvent: {}
+[59.409175] (-) TimerEvent: {}
+[59.512651] (-) TimerEvent: {}
+[59.614784] (-) TimerEvent: {}
+[59.716392] (-) TimerEvent: {}
+[59.817822] (-) TimerEvent: {}
+[59.919048] (-) TimerEvent: {}
+[60.020601] (-) TimerEvent: {}
+[60.121892] (-) TimerEvent: {}
+[60.223098] (-) TimerEvent: {}
+[60.325751] (-) TimerEvent: {}
+[60.428766] (-) TimerEvent: {}
+[60.530171] (-) TimerEvent: {}
+[60.631338] (-) TimerEvent: {}
+[60.733453] (-) TimerEvent: {}
+[60.836173] (-) TimerEvent: {}
+[60.938173] (-) TimerEvent: {}
+[61.042848] (-) TimerEvent: {}
+[61.143782] (-) TimerEvent: {}
+[61.245188] (-) TimerEvent: {}
+[61.347059] (-) TimerEvent: {}
+[61.448937] (-) TimerEvent: {}
+[61.550446] (-) TimerEvent: {}
+[61.651950] (-) TimerEvent: {}
+[61.753558] (-) TimerEvent: {}
+[61.854840] (-) TimerEvent: {}
+[61.956389] (-) TimerEvent: {}
+[62.058057] (-) TimerEvent: {}
+[62.161257] (-) TimerEvent: {}
+[62.263435] (-) TimerEvent: {}
+[62.365708] (-) TimerEvent: {}
+[62.466869] (-) TimerEvent: {}
+[62.568724] (-) TimerEvent: {}
+[62.673614] (-) TimerEvent: {}
+[62.776781] (-) TimerEvent: {}
+[62.878286] (-) TimerEvent: {}
+[62.979847] (-) TimerEvent: {}
+[63.082340] (-) TimerEvent: {}
+[63.183965] (-) TimerEvent: {}
+[63.285981] (-) TimerEvent: {}
+[63.389612] (-) TimerEvent: {}
+[63.493052] (-) TimerEvent: {}
+[63.594981] (-) TimerEvent: {}
+[63.697701] (-) TimerEvent: {}
+[63.799396] (-) TimerEvent: {}
+[63.901178] (-) TimerEvent: {}
+[64.002852] (-) TimerEvent: {}
+[64.105395] (-) TimerEvent: {}
+[64.208652] (-) TimerEvent: {}
+[64.310819] (-) TimerEvent: {}
+[64.412615] (-) TimerEvent: {}
+[64.514498] (-) TimerEvent: {}
+[64.616720] (-) TimerEvent: {}
+[64.718254] (-) TimerEvent: {}
+[64.821192] (-) TimerEvent: {}
+[64.922795] (-) TimerEvent: {}
+[65.024051] (-) TimerEvent: {}
+[65.125491] (-) TimerEvent: {}
+[65.226668] (-) TimerEvent: {}
+[65.327794] (-) TimerEvent: {}
+[65.429035] (-) TimerEvent: {}
+[65.530102] (-) TimerEvent: {}
+[65.631468] (-) TimerEvent: {}
+[65.733314] (-) TimerEvent: {}
+[65.836882] (-) TimerEvent: {}
+[65.938339] (-) TimerEvent: {}
+[66.040164] (-) TimerEvent: {}
+[66.141722] (-) TimerEvent: {}
+[66.244177] (-) TimerEvent: {}
+[66.346298] (-) TimerEvent: {}
+[66.447818] (-) TimerEvent: {}
+[66.550186] (-) TimerEvent: {}
+[66.651516] (-) TimerEvent: {}
+[66.753719] (-) TimerEvent: {}
+[66.856303] (-) TimerEvent: {}
+[66.958003] (-) TimerEvent: {}
+[67.062755] (-) TimerEvent: {}
+[67.163972] (-) TimerEvent: {}
+[67.266410] (-) TimerEvent: {}
+[67.369482] (-) TimerEvent: {}
+[67.471692] (-) TimerEvent: {}
+[67.577977] (-) TimerEvent: {}
+[67.679096] (-) TimerEvent: {}
+[67.780183] (-) TimerEvent: {}
+[67.881748] (-) TimerEvent: {}
+[67.983356] (-) TimerEvent: {}
+[68.085257] (-) TimerEvent: {}
+[68.187209] (-) TimerEvent: {}
+[68.288541] (-) TimerEvent: {}
+[68.390997] (-) TimerEvent: {}
+[68.492711] (-) TimerEvent: {}
+[68.594583] (-) TimerEvent: {}
+[68.697353] (-) TimerEvent: {}
+[68.800103] (-) TimerEvent: {}
+[68.902980] (-) TimerEvent: {}
+[69.007303] (-) TimerEvent: {}
+[69.120617] (-) TimerEvent: {}
+[69.223357] (-) TimerEvent: {}
+[69.328711] (-) TimerEvent: {}
+[69.430547] (-) TimerEvent: {}
+[69.536166] (-) TimerEvent: {}
+[69.639291] (-) TimerEvent: {}
+[69.741576] (-) TimerEvent: {}
+[69.844717] (-) TimerEvent: {}
+[69.948514] (-) TimerEvent: {}
+[70.060902] (-) TimerEvent: {}
+[70.166165] (-) TimerEvent: {}
+[70.269407] (-) TimerEvent: {}
+[70.371174] (-) TimerEvent: {}
+[70.474560] (-) TimerEvent: {}
+[70.578432] (-) TimerEvent: {}
+[70.682723] (-) TimerEvent: {}
+[70.786386] (-) TimerEvent: {}
+[70.888138] (-) TimerEvent: {}
+[70.992582] (-) TimerEvent: {}
+[71.102796] (-) TimerEvent: {}
+[71.209534] (-) TimerEvent: {}
+[71.311934] (-) TimerEvent: {}
+[71.414610] (-) TimerEvent: {}
+[71.517035] (-) TimerEvent: {}
+[71.618560] (-) TimerEvent: {}
+[71.720360] (-) TimerEvent: {}
+[71.823737] (-) TimerEvent: {}
+[71.927891] (-) TimerEvent: {}
+[72.032574] (-) TimerEvent: {}
+[72.133844] (-) TimerEvent: {}
+[72.242048] (-) TimerEvent: {}
+[72.345892] (-) TimerEvent: {}
+[72.453104] (-) TimerEvent: {}
+[72.554727] (-) TimerEvent: {}
+[72.657121] (-) TimerEvent: {}
+[72.758817] (-) TimerEvent: {}
+[72.860186] (-) TimerEvent: {}
+[72.963325] (-) TimerEvent: {}
+[73.066883] (-) TimerEvent: {}
+[73.169607] (-) TimerEvent: {}
+[73.270854] (-) TimerEvent: {}
+[73.372695] (-) TimerEvent: {}
+[73.474014] (-) TimerEvent: {}
+[73.575791] (-) TimerEvent: {}
+[73.677867] (-) TimerEvent: {}
+[73.782586] (-) TimerEvent: {}
+[73.888009] (-) TimerEvent: {}
+[73.992923] (-) TimerEvent: {}
+[74.094181] (-) TimerEvent: {}
+[74.196151] (-) TimerEvent: {}
+[74.298788] (-) TimerEvent: {}
+[74.402502] (-) TimerEvent: {}
+[74.518054] (-) TimerEvent: {}
+[74.633641] (-) TimerEvent: {}
+[74.736342] (-) TimerEvent: {}
+[74.837393] (-) TimerEvent: {}
+[74.939086] (-) TimerEvent: {}
+[75.042511] (-) TimerEvent: {}
+[75.147248] (-) TimerEvent: {}
+[75.250833] (-) TimerEvent: {}
+[75.354830] (-) TimerEvent: {}
+[75.460614] (-) TimerEvent: {}
+[75.561946] (-) TimerEvent: {}
+[75.663959] (-) TimerEvent: {}
+[75.767885] (-) TimerEvent: {}
+[75.870166] (-) TimerEvent: {}
+[75.981282] (-) TimerEvent: {}
+[76.087855] (-) TimerEvent: {}
+[76.203152] (-) TimerEvent: {}
+[76.322113] (-) TimerEvent: {}
+[76.427577] (-) TimerEvent: {}
+[76.529090] (-) TimerEvent: {}
+[76.631080] (-) TimerEvent: {}
+[76.734196] (-) TimerEvent: {}
+[76.835359] (-) TimerEvent: {}
+[76.937094] (-) TimerEvent: {}
+[77.039163] (-) TimerEvent: {}
+[77.140660] (-) TimerEvent: {}
+[77.241995] (-) TimerEvent: {}
+[77.343341] (-) TimerEvent: {}
+[77.444844] (-) TimerEvent: {}
+[77.546244] (-) TimerEvent: {}
+[77.647428] (-) TimerEvent: {}
+[77.748873] (-) TimerEvent: {}
+[77.855647] (-) TimerEvent: {}
+[77.960580] (-) TimerEvent: {}
+[78.062640] (-) TimerEvent: {}
+[78.163760] (-) TimerEvent: {}
+[78.266252] (-) TimerEvent: {}
+[78.368107] (-) TimerEvent: {}
+[78.470715] (-) TimerEvent: {}
+[78.571908] (-) TimerEvent: {}
+[78.673150] (-) TimerEvent: {}
+[78.774923] (-) TimerEvent: {}
+[78.876458] (-) TimerEvent: {}
+[78.977905] (-) TimerEvent: {}
+[79.079496] (-) TimerEvent: {}
+[79.187363] (-) TimerEvent: {}
+[79.292875] (-) TimerEvent: {}
+[79.365322] (diane_point_cloud_transport) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/src/diane_encoder.cpp:109:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 5 of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> > encode_diane_multinomial_i16(const at::Tensor&, float, float, float, const std::array<float, 4>&, const std::array<float, 4>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[79.386900] (diane_point_cloud_transport) StderrLine: {'line': b'  109 | std::vector<uint8_t> \x1b[01;31m\x1b[Kencode_diane_multinomial_i16\x1b[m\x1b[K(\n'}
+[79.393574] (-) TimerEvent: {}
+[79.398189] (diane_point_cloud_transport) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[79.403251] (diane_point_cloud_transport) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/src/diane_encoder.cpp:12\x1b[m\x1b[K:\n'}
+[79.409627] (diane_point_cloud_transport) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/include/diane_point_cloud_transport/diane_encoder.hpp:26:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> > encode_diane_multinomial_i16(const at::Tensor&, float, float, float, const std::array<float, 4>&, const std::array<float, 4>&)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[79.410744] (diane_point_cloud_transport) StderrLine: {'line': b'   26 | std::vector<uint8_t> \x1b[01;36m\x1b[Kencode_diane_multinomial_i16\x1b[m\x1b[K(\n'}
+[79.411386] (diane_point_cloud_transport) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[79.412102] (diane_point_cloud_transport) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/src/diane_encoder.cpp:109:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 6 of \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> > encode_diane_multinomial_i16(const at::Tensor&, float, float, float, const std::array<float, 4>&, const std::array<float, 4>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[79.412923] (diane_point_cloud_transport) StderrLine: {'line': b'  109 | std::vector<uint8_t> \x1b[01;31m\x1b[Kencode_diane_multinomial_i16\x1b[m\x1b[K(\n'}
+[79.413549] (diane_point_cloud_transport) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[79.414424] (diane_point_cloud_transport) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/src/diane_encoder.cpp:12\x1b[m\x1b[K:\n'}
+[79.415280] (diane_point_cloud_transport) StderrLine: {'line': b'\x1b[01m\x1b[K/root/ros2_ws/src/point_cloud_transport_plugins-humble/diane_point_cloud_transport/include/diane_point_cloud_transport/diane_encoder.hpp:26:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<unsigned char, std::allocator<unsigned char> > encode_diane_multinomial_i16(const at::Tensor&, float, float, float, const std::array<float, 4>&, const std::array<float, 4>&)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[79.416028] (diane_point_cloud_transport) StderrLine: {'line': b'   26 | std::vector<uint8_t> \x1b[01;36m\x1b[Kencode_diane_multinomial_i16\x1b[m\x1b[K(\n'}
+[79.416836] (diane_point_cloud_transport) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[79.493702] (-) TimerEvent: {}
+[79.594901] (-) TimerEvent: {}
+[79.696011] (-) TimerEvent: {}
+[79.799799] (-) TimerEvent: {}
+[79.904765] (-) TimerEvent: {}
+[80.006132] (-) TimerEvent: {}
+[80.108993] (-) TimerEvent: {}
+[80.213352] (-) TimerEvent: {}
+[80.317923] (-) TimerEvent: {}
+[80.421900] (-) TimerEvent: {}
+[80.523342] (-) TimerEvent: {}
+[80.625215] (-) TimerEvent: {}
+[80.726626] (-) TimerEvent: {}
+[80.827769] (-) TimerEvent: {}
+[80.928974] (-) TimerEvent: {}
+[81.030259] (-) TimerEvent: {}
+[81.131531] (-) TimerEvent: {}
+[81.233502] (-) TimerEvent: {}
+[81.334929] (-) TimerEvent: {}
+[81.438030] (-) TimerEvent: {}
+[81.539640] (-) TimerEvent: {}
+[81.641151] (-) TimerEvent: {}
+[81.742324] (-) TimerEvent: {}
+[81.844050] (-) TimerEvent: {}
+[81.946094] (-) TimerEvent: {}
+[82.055949] (-) TimerEvent: {}
+[82.160060] (-) TimerEvent: {}
+[82.261494] (-) TimerEvent: {}
+[82.363049] (-) TimerEvent: {}
+[82.464714] (-) TimerEvent: {}
+[82.566675] (-) TimerEvent: {}
+[82.669024] (-) TimerEvent: {}
+[82.771060] (-) TimerEvent: {}
+[82.873850] (-) TimerEvent: {}
+[82.975071] (-) TimerEvent: {}
+[83.078490] (-) TimerEvent: {}
+[83.185474] (-) TimerEvent: {}
+[83.292390] (-) TimerEvent: {}
+[83.394068] (-) TimerEvent: {}
+[83.498273] (-) TimerEvent: {}
+[83.607123] (-) TimerEvent: {}
+[83.792053] (-) TimerEvent: {}
+[83.915608] (-) TimerEvent: {}
+[84.203494] (-) TimerEvent: {}
+[84.353547] (-) TimerEvent: {}
+[84.463843] (-) TimerEvent: {}
+[84.575032] (-) TimerEvent: {}
+[84.746123] (-) TimerEvent: {}
+[84.862595] (-) TimerEvent: {}
+[84.976509] (-) TimerEvent: {}
+[85.081293] (-) TimerEvent: {}
+[85.195160] (-) TimerEvent: {}
+[85.312758] (-) TimerEvent: {}
+[85.424813] (-) TimerEvent: {}
+[85.529782] (-) TimerEvent: {}
+[85.632899] (-) TimerEvent: {}
+[85.735582] (-) TimerEvent: {}
+[85.836872] (-) TimerEvent: {}
+[85.938525] (-) TimerEvent: {}
+[86.039962] (-) TimerEvent: {}
+[86.142230] (-) TimerEvent: {}
+[86.243435] (-) TimerEvent: {}
+[86.344727] (-) TimerEvent: {}
+[86.446823] (-) TimerEvent: {}
+[86.549951] (-) TimerEvent: {}
+[86.652339] (-) TimerEvent: {}
+[86.753237] (-) TimerEvent: {}
+[86.854715] (-) TimerEvent: {}
+[86.959977] (-) TimerEvent: {}
+[87.062691] (-) TimerEvent: {}
+[87.165032] (-) TimerEvent: {}
+[87.266162] (-) TimerEvent: {}
+[87.367228] (-) TimerEvent: {}
+[87.468307] (-) TimerEvent: {}
+[87.569181] (-) TimerEvent: {}
+[87.670076] (-) TimerEvent: {}
+[87.771137] (-) TimerEvent: {}
+[87.872689] (-) TimerEvent: {}
+[87.973702] (-) TimerEvent: {}
+[88.074726] (-) TimerEvent: {}
+[88.175773] (-) TimerEvent: {}
+[88.276866] (-) TimerEvent: {}
+[88.377883] (-) TimerEvent: {}
+[88.478864] (-) TimerEvent: {}
+[88.579920] (-) TimerEvent: {}
+[88.684517] (-) TimerEvent: {}
+[88.788975] (-) TimerEvent: {}
+[88.893934] (-) TimerEvent: {}
+[89.000486] (-) TimerEvent: {}
+[89.102922] (-) TimerEvent: {}
+[89.205739] (-) TimerEvent: {}
+[89.309321] (-) TimerEvent: {}
+[89.413006] (-) TimerEvent: {}
+[89.517836] (-) TimerEvent: {}
+[89.621702] (-) TimerEvent: {}
+[89.724461] (-) TimerEvent: {}
+[89.827989] (-) TimerEvent: {}
+[89.931178] (-) TimerEvent: {}
+[90.032442] (-) TimerEvent: {}
+[90.135106] (-) TimerEvent: {}
+[90.236547] (-) TimerEvent: {}
+[90.339421] (-) TimerEvent: {}
+[90.441348] (-) TimerEvent: {}
+[90.542360] (-) TimerEvent: {}
+[90.643540] (-) TimerEvent: {}
+[90.744679] (-) TimerEvent: {}
+[90.845940] (-) TimerEvent: {}
+[90.946965] (-) TimerEvent: {}
+[91.048464] (-) TimerEvent: {}
+[91.149818] (-) TimerEvent: {}
+[91.251397] (-) TimerEvent: {}
+[91.352820] (-) TimerEvent: {}
+[91.453935] (-) TimerEvent: {}
+[91.554933] (-) TimerEvent: {}
+[91.656004] (-) TimerEvent: {}
+[91.757288] (-) TimerEvent: {}
+[91.858723] (-) TimerEvent: {}
+[91.960835] (-) TimerEvent: {}
+[92.061894] (-) TimerEvent: {}
+[92.162861] (-) TimerEvent: {}
+[92.263975] (-) TimerEvent: {}
+[92.365593] (-) TimerEvent: {}
+[92.467678] (-) TimerEvent: {}
+[92.569108] (-) TimerEvent: {}
+[92.670634] (-) TimerEvent: {}
+[92.772145] (-) TimerEvent: {}
+[92.873982] (-) TimerEvent: {}
+[92.975149] (-) TimerEvent: {}
+[93.078161] (-) TimerEvent: {}
+[93.179225] (-) TimerEvent: {}
+[93.280510] (-) TimerEvent: {}
+[93.381796] (-) TimerEvent: {}
+[93.484110] (-) TimerEvent: {}
+[93.587174] (-) TimerEvent: {}
+[93.689711] (-) TimerEvent: {}
+[93.790997] (-) TimerEvent: {}
+[93.893339] (-) TimerEvent: {}
+[93.996515] (-) TimerEvent: {}
+[94.099383] (-) TimerEvent: {}
+[94.200672] (-) TimerEvent: {}
+[94.303286] (-) TimerEvent: {}
+[94.404454] (-) TimerEvent: {}
+[94.505862] (-) TimerEvent: {}
+[94.607826] (-) TimerEvent: {}
+[94.709189] (-) TimerEvent: {}
+[94.810614] (-) TimerEvent: {}
+[94.912032] (-) TimerEvent: {}
+[95.013154] (-) TimerEvent: {}
+[95.114482] (-) TimerEvent: {}
+[95.215845] (-) TimerEvent: {}
+[95.317115] (-) TimerEvent: {}
+[95.418335] (-) TimerEvent: {}
+[95.519586] (-) TimerEvent: {}
+[95.620584] (-) TimerEvent: {}
+[95.721736] (-) TimerEvent: {}
+[95.823473] (-) TimerEvent: {}
+[95.924762] (-) TimerEvent: {}
+[96.026058] (-) TimerEvent: {}
+[96.127055] (-) TimerEvent: {}
+[96.229729] (-) TimerEvent: {}
+[96.330834] (-) TimerEvent: {}
+[96.432679] (-) TimerEvent: {}
+[96.534353] (-) TimerEvent: {}
+[96.635375] (-) TimerEvent: {}
+[96.737456] (-) TimerEvent: {}
+[96.839723] (-) TimerEvent: {}
+[96.944442] (-) TimerEvent: {}
+[97.048671] (-) TimerEvent: {}
+[97.149807] (-) TimerEvent: {}
+[97.251339] (-) TimerEvent: {}
+[97.353884] (-) TimerEvent: {}
+[97.457175] (-) TimerEvent: {}
+[97.561794] (-) TimerEvent: {}
+[97.663161] (-) TimerEvent: {}
+[97.764404] (-) TimerEvent: {}
+[97.865565] (-) TimerEvent: {}
+[97.967414] (-) TimerEvent: {}
+[98.069164] (-) TimerEvent: {}
+[98.170408] (-) TimerEvent: {}
+[98.271468] (-) TimerEvent: {}
+[98.376454] (-) TimerEvent: {}
+[98.478625] (-) TimerEvent: {}
+[98.585510] (-) TimerEvent: {}
+[98.688273] (-) TimerEvent: {}
+[98.790183] (-) TimerEvent: {}
+[98.891805] (-) TimerEvent: {}
+[98.993061] (-) TimerEvent: {}
+[99.094233] (-) TimerEvent: {}
+[99.196391] (-) TimerEvent: {}
+[99.297761] (-) TimerEvent: {}
+[99.400561] (-) TimerEvent: {}
+[99.501800] (-) TimerEvent: {}
+[99.605857] (-) TimerEvent: {}
+[99.708890] (-) TimerEvent: {}
+[99.812004] (-) TimerEvent: {}
+[99.914643] (-) TimerEvent: {}
+[100.017064] (-) TimerEvent: {}
+[100.118605] (-) TimerEvent: {}
+[100.219924] (-) TimerEvent: {}
+[100.321526] (-) TimerEvent: {}
+[100.422938] (-) TimerEvent: {}
+[100.524685] (-) TimerEvent: {}
+[100.625806] (-) TimerEvent: {}
+[100.727097] (-) TimerEvent: {}
+[100.838372] (-) TimerEvent: {}
+[100.943469] (-) TimerEvent: {}
+[101.047464] (-) TimerEvent: {}
+[101.152112] (-) TimerEvent: {}
+[101.269516] (-) TimerEvent: {}
+[101.371272] (-) TimerEvent: {}
+[101.473611] (-) TimerEvent: {}
+[101.574795] (-) TimerEvent: {}
+[101.676017] (-) TimerEvent: {}
+[101.777169] (-) TimerEvent: {}
+[101.879796] (-) TimerEvent: {}
+[101.982716] (-) TimerEvent: {}
+[102.083828] (-) TimerEvent: {}
+[102.187696] (-) TimerEvent: {}
+[102.291677] (-) TimerEvent: {}
+[102.392755] (-) TimerEvent: {}
+[102.494742] (-) TimerEvent: {}
+[102.595922] (-) TimerEvent: {}
+[102.698432] (-) TimerEvent: {}
+[102.801194] (-) TimerEvent: {}
+[102.903084] (-) TimerEvent: {}
+[103.005354] (-) TimerEvent: {}
+[103.107471] (-) TimerEvent: {}
+[103.221544] (-) TimerEvent: {}
+[103.323225] (-) TimerEvent: {}
+[103.428830] (-) TimerEvent: {}
+[103.536648] (-) TimerEvent: {}
+[103.637761] (-) TimerEvent: {}
+[103.740743] (-) TimerEvent: {}
+[103.842403] (-) TimerEvent: {}
+[103.946631] (-) TimerEvent: {}
+[104.050049] (-) TimerEvent: {}
+[104.151224] (-) TimerEvent: {}
+[104.254618] (-) TimerEvent: {}
+[104.357541] (-) TimerEvent: {}
+[104.461158] (-) TimerEvent: {}
+[104.563522] (-) TimerEvent: {}
+[104.665497] (-) TimerEvent: {}
+[104.751307] (diane_point_cloud_transport) StderrLine: {'line': b'make[2]: *** [CMakeFiles/diane_point_cloud_transport.dir/build.make:63: CMakeFiles/diane_point_cloud_transport.dir/src/diane_encoder.cpp.o] Error 1\n'}
+[104.755991] (diane_point_cloud_transport) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[104.765971] (-) TimerEvent: {}
+[104.866875] (-) TimerEvent: {}
+[104.970490] (-) TimerEvent: {}
+[105.073216] (-) TimerEvent: {}
+[105.175645] (-) TimerEvent: {}
+[105.276826] (-) TimerEvent: {}
+[105.378111] (-) TimerEvent: {}
+[105.479876] (-) TimerEvent: {}
+[105.581844] (-) TimerEvent: {}
+[105.683483] (-) TimerEvent: {}
+[105.785824] (-) TimerEvent: {}
+[105.887663] (-) TimerEvent: {}
+[105.989542] (-) TimerEvent: {}
+[106.090605] (-) TimerEvent: {}
+[106.191887] (-) TimerEvent: {}
+[106.293183] (-) TimerEvent: {}
+[106.394321] (-) TimerEvent: {}
+[106.495605] (-) TimerEvent: {}
+[106.597534] (-) TimerEvent: {}
+[106.699106] (-) TimerEvent: {}
+[106.800508] (-) TimerEvent: {}
+[106.902238] (-) TimerEvent: {}
+[107.003437] (-) TimerEvent: {}
+[107.105229] (-) TimerEvent: {}
+[107.206555] (-) TimerEvent: {}
+[107.308528] (-) TimerEvent: {}
+[107.409952] (-) TimerEvent: {}
+[107.511104] (-) TimerEvent: {}
+[107.612882] (-) TimerEvent: {}
+[107.714748] (-) TimerEvent: {}
+[107.816487] (-) TimerEvent: {}
+[107.917612] (-) TimerEvent: {}
+[108.018921] (-) TimerEvent: {}
+[108.120781] (-) TimerEvent: {}
+[108.221996] (-) TimerEvent: {}
+[108.323220] (-) TimerEvent: {}
+[108.424830] (-) TimerEvent: {}
+[108.527447] (-) TimerEvent: {}
+[108.628578] (-) TimerEvent: {}
+[108.729743] (-) TimerEvent: {}
+[108.830836] (-) TimerEvent: {}
+[108.932039] (-) TimerEvent: {}
+[109.033438] (-) TimerEvent: {}
+[109.136197] (-) TimerEvent: {}
+[109.239811] (-) TimerEvent: {}
+[109.341477] (-) TimerEvent: {}
+[109.443275] (-) TimerEvent: {}
+[109.544476] (-) TimerEvent: {}
+[109.645690] (-) TimerEvent: {}
+[109.748194] (-) TimerEvent: {}
+[109.849843] (-) TimerEvent: {}
+[109.951288] (-) TimerEvent: {}
+[110.053065] (-) TimerEvent: {}
+[110.155236] (-) TimerEvent: {}
+[110.256307] (-) TimerEvent: {}
+[110.357399] (-) TimerEvent: {}
+[110.458599] (-) TimerEvent: {}
+[110.560586] (-) TimerEvent: {}
+[110.661582] (-) TimerEvent: {}
+[110.762645] (-) TimerEvent: {}
+[110.863797] (-) TimerEvent: {}
+[110.965040] (-) TimerEvent: {}
+[111.067161] (-) TimerEvent: {}
+[111.168267] (-) TimerEvent: {}
+[111.269411] (-) TimerEvent: {}
+[111.370535] (-) TimerEvent: {}
+[111.471840] (-) TimerEvent: {}
+[111.573917] (-) TimerEvent: {}
+[111.676369] (-) TimerEvent: {}
+[111.778215] (-) TimerEvent: {}
+[111.880361] (-) TimerEvent: {}
+[111.981337] (-) TimerEvent: {}
+[112.082854] (-) TimerEvent: {}
+[112.185271] (-) TimerEvent: {}
+[112.287423] (-) TimerEvent: {}
+[112.388722] (-) TimerEvent: {}
+[112.489940] (-) TimerEvent: {}
+[112.591183] (-) TimerEvent: {}
+[112.692576] (-) TimerEvent: {}
+[112.793716] (-) TimerEvent: {}
+[112.894897] (-) TimerEvent: {}
+[112.996047] (-) TimerEvent: {}
+[113.097221] (-) TimerEvent: {}
+[113.198354] (-) TimerEvent: {}
+[113.301781] (-) TimerEvent: {}
+[113.404542] (-) TimerEvent: {}
+[113.506203] (-) TimerEvent: {}
+[113.607550] (-) TimerEvent: {}
+[113.708972] (-) TimerEvent: {}
+[113.812603] (-) TimerEvent: {}
+[113.913761] (-) TimerEvent: {}
+[114.015003] (-) TimerEvent: {}
+[114.116358] (-) TimerEvent: {}
+[114.218494] (-) TimerEvent: {}
+[114.322764] (-) TimerEvent: {}
+[114.423910] (-) TimerEvent: {}
+[114.525305] (-) TimerEvent: {}
+[114.629669] (-) TimerEvent: {}
+[114.735658] (-) TimerEvent: {}
+[114.837308] (-) TimerEvent: {}
+[114.942363] (-) TimerEvent: {}
+[115.047620] (-) TimerEvent: {}
+[115.150450] (-) TimerEvent: {}
+[115.253100] (-) TimerEvent: {}
+[115.354577] (-) TimerEvent: {}
+[115.459214] (-) TimerEvent: {}
+[115.562355] (-) TimerEvent: {}
+[115.663956] (-) TimerEvent: {}
+[115.766363] (-) TimerEvent: {}
+[115.868445] (-) TimerEvent: {}
+[115.969582] (-) TimerEvent: {}
+[116.070745] (-) TimerEvent: {}
+[116.171848] (-) TimerEvent: {}
+[116.273013] (-) TimerEvent: {}
+[116.374637] (-) TimerEvent: {}
+[116.475974] (-) TimerEvent: {}
+[116.578660] (-) TimerEvent: {}
+[116.681068] (-) TimerEvent: {}
+[116.782490] (-) TimerEvent: {}
+[116.885107] (-) TimerEvent: {}
+[116.986786] (-) TimerEvent: {}
+[117.088639] (-) TimerEvent: {}
+[117.190616] (-) TimerEvent: {}
+[117.292411] (-) TimerEvent: {}
+[117.393905] (-) TimerEvent: {}
+[117.494980] (-) TimerEvent: {}
+[117.596355] (-) TimerEvent: {}
+[117.697903] (-) TimerEvent: {}
+[117.799062] (-) TimerEvent: {}
+[117.900200] (-) TimerEvent: {}
+[118.003160] (-) TimerEvent: {}
+[118.104302] (-) TimerEvent: {}
+[118.205454] (-) TimerEvent: {}
+[118.306516] (-) TimerEvent: {}
+[118.407567] (-) TimerEvent: {}
+[118.511323] (-) TimerEvent: {}
+[118.613267] (-) TimerEvent: {}
+[118.714617] (-) TimerEvent: {}
+[118.816427] (-) TimerEvent: {}
+[118.917677] (-) TimerEvent: {}
+[119.018906] (-) TimerEvent: {}
+[119.121618] (-) TimerEvent: {}
+[119.222700] (-) TimerEvent: {}
+[119.323796] (-) TimerEvent: {}
+[119.425520] (-) TimerEvent: {}
+[119.526632] (-) TimerEvent: {}
+[119.628040] (-) TimerEvent: {}
+[119.729205] (-) TimerEvent: {}
+[119.830245] (-) TimerEvent: {}
+[119.931254] (-) TimerEvent: {}
+[120.032432] (-) TimerEvent: {}
+[120.133594] (-) TimerEvent: {}
+[120.234818] (-) TimerEvent: {}
+[120.335962] (-) TimerEvent: {}
+[120.437240] (-) TimerEvent: {}
+[120.538378] (-) TimerEvent: {}
+[120.639547] (-) TimerEvent: {}
+[120.740743] (-) TimerEvent: {}
+[120.841773] (-) TimerEvent: {}
+[120.943878] (-) TimerEvent: {}
+[121.045170] (-) TimerEvent: {}
+[121.146304] (-) TimerEvent: {}
+[121.247910] (-) TimerEvent: {}
+[121.349061] (-) TimerEvent: {}
+[121.450203] (-) TimerEvent: {}
+[121.551307] (-) TimerEvent: {}
+[121.653650] (-) TimerEvent: {}
+[121.754845] (-) TimerEvent: {}
+[121.856057] (-) TimerEvent: {}
+[121.957432] (-) TimerEvent: {}
+[122.058625] (-) TimerEvent: {}
+[122.159931] (-) TimerEvent: {}
+[122.261932] (-) TimerEvent: {}
+[122.363066] (-) TimerEvent: {}
+[122.464318] (-) TimerEvent: {}
+[122.565485] (-) TimerEvent: {}
+[122.666760] (-) TimerEvent: {}
+[122.767884] (-) TimerEvent: {}
+[122.869228] (-) TimerEvent: {}
+[122.970412] (-) TimerEvent: {}
+[123.071570] (-) TimerEvent: {}
+[123.172795] (-) TimerEvent: {}
+[123.274231] (-) TimerEvent: {}
+[123.377061] (-) TimerEvent: {}
+[123.478615] (-) TimerEvent: {}
+[123.580433] (-) TimerEvent: {}
+[123.682136] (-) TimerEvent: {}
+[123.783424] (-) TimerEvent: {}
+[123.885046] (-) TimerEvent: {}
+[123.986508] (-) TimerEvent: {}
+[124.088358] (-) TimerEvent: {}
+[124.189569] (-) TimerEvent: {}
+[124.291288] (-) TimerEvent: {}
+[124.395044] (-) TimerEvent: {}
+[124.500671] (-) TimerEvent: {}
+[124.601805] (-) TimerEvent: {}
+[124.703017] (-) TimerEvent: {}
+[124.804290] (-) TimerEvent: {}
+[124.905710] (-) TimerEvent: {}
+[125.007252] (-) TimerEvent: {}
+[125.108839] (-) TimerEvent: {}
+[125.209998] (-) TimerEvent: {}
+[125.311355] (-) TimerEvent: {}
+[125.412825] (-) TimerEvent: {}
+[125.514727] (-) TimerEvent: {}
+[125.615991] (-) TimerEvent: {}
+[125.717590] (-) TimerEvent: {}
+[125.819913] (-) TimerEvent: {}
+[125.921074] (-) TimerEvent: {}
+[126.022135] (-) TimerEvent: {}
+[126.123128] (-) TimerEvent: {}
+[126.224333] (-) TimerEvent: {}
+[126.325773] (-) TimerEvent: {}
+[126.426971] (-) TimerEvent: {}
+[126.528095] (-) TimerEvent: {}
+[126.629391] (-) TimerEvent: {}
+[126.730697] (-) TimerEvent: {}
+[126.832059] (-) TimerEvent: {}
+[126.933291] (-) TimerEvent: {}
+[127.034651] (-) TimerEvent: {}
+[127.135702] (-) TimerEvent: {}
+[127.238299] (-) TimerEvent: {}
+[127.340607] (-) TimerEvent: {}
+[127.441745] (-) TimerEvent: {}
+[127.542876] (-) TimerEvent: {}
+[127.644008] (-) TimerEvent: {}
+[127.745560] (-) TimerEvent: {}
+[127.846694] (-) TimerEvent: {}
+[127.947956] (-) TimerEvent: {}
+[128.049208] (-) TimerEvent: {}
+[128.150648] (-) TimerEvent: {}
+[128.251725] (-) TimerEvent: {}
+[128.352919] (-) TimerEvent: {}
+[128.455426] (-) TimerEvent: {}
+[128.556670] (-) TimerEvent: {}
+[128.657898] (-) TimerEvent: {}
+[128.758975] (-) TimerEvent: {}
+[128.860372] (-) TimerEvent: {}
+[128.962353] (-) TimerEvent: {}
+[129.063516] (-) TimerEvent: {}
+[129.164858] (-) TimerEvent: {}
+[129.266862] (-) TimerEvent: {}
+[129.368180] (-) TimerEvent: {}
+[129.469888] (-) TimerEvent: {}
+[129.571120] (-) TimerEvent: {}
+[129.672575] (-) TimerEvent: {}
+[129.774578] (-) TimerEvent: {}
+[129.875803] (-) TimerEvent: {}
+[129.977118] (-) TimerEvent: {}
+[130.078417] (-) TimerEvent: {}
+[130.179924] (-) TimerEvent: {}
+[130.282272] (-) TimerEvent: {}
+[130.383433] (-) TimerEvent: {}
+[130.485334] (-) TimerEvent: {}
+[130.587001] (-) TimerEvent: {}
+[130.689204] (-) TimerEvent: {}
+[130.791339] (-) TimerEvent: {}
+[130.893231] (-) TimerEvent: {}
+[130.994785] (-) TimerEvent: {}
+[131.095928] (-) TimerEvent: {}
+[131.197612] (-) TimerEvent: {}
+[131.299069] (-) TimerEvent: {}
+[131.400835] (-) TimerEvent: {}
+[131.502595] (-) TimerEvent: {}
+[131.603860] (-) TimerEvent: {}
+[131.705197] (-) TimerEvent: {}
+[131.806955] (-) TimerEvent: {}
+[131.908515] (-) TimerEvent: {}
+[132.010319] (-) TimerEvent: {}
+[132.111657] (-) TimerEvent: {}
+[132.212844] (-) TimerEvent: {}
+[132.314339] (-) TimerEvent: {}
+[132.416052] (-) TimerEvent: {}
+[132.517373] (-) TimerEvent: {}
+[132.619042] (-) TimerEvent: {}
+[132.720660] (-) TimerEvent: {}
+[132.822499] (-) TimerEvent: {}
+[132.924408] (-) TimerEvent: {}
+[133.026176] (-) TimerEvent: {}
+[133.127352] (-) TimerEvent: {}
+[133.228666] (-) TimerEvent: {}
+[133.329936] (-) TimerEvent: {}
+[133.431011] (-) TimerEvent: {}
+[133.532787] (-) TimerEvent: {}
+[133.634628] (-) TimerEvent: {}
+[133.736049] (-) TimerEvent: {}
+[133.837362] (-) TimerEvent: {}
+[133.938360] (-) TimerEvent: {}
+[134.039553] (-) TimerEvent: {}
+[134.141160] (-) TimerEvent: {}
+[134.242599] (-) TimerEvent: {}
+[134.344741] (-) TimerEvent: {}
+[134.446263] (-) TimerEvent: {}
+[134.547607] (-) TimerEvent: {}
+[134.649568] (-) TimerEvent: {}
+[134.752774] (-) TimerEvent: {}
+[134.805435] (diane_point_cloud_transport) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/diane_point_cloud_transport.dir/all] Error 2\n'}
+[134.811363] (diane_point_cloud_transport) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[134.853145] (-) TimerEvent: {}
+[134.883177] (diane_point_cloud_transport) CommandEnded: {'returncode': 2}
+[134.953819] (-) TimerEvent: {}
+[134.991191] (diane_point_cloud_transport) JobEnded: {'identifier': 'diane_point_cloud_transport', 'rc': 2}
+[135.008894] (point_cloud_transport_plugins) JobSkipped: {'identifier': 'point_cloud_transport_plugins'}
+[135.009443] (-) EventReactorShutdown: {}

@@ -1,0 +1,33 @@
+[35m[1mScanning dependencies of target diane_point_cloud_transport[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/diane_point_cloud_transport.dir/src/diane_encoder.cpp.o[0m
+[ 40%] [32m[1mLinking CXX shared library libdiane_point_cloud_transport.so[0m
+[100%] Built target diane_point_cloud_transport
+-- Install configuration: ""
+-- Installing: /root/ros2_ws/install/lib/libdiane_point_cloud_transport.so
+-- Set runtime path of "/root/ros2_ws/install/lib/libdiane_point_cloud_transport.so" to ""
+-- Up-to-date: /root/ros2_ws/install/include/diane_point_cloud_transport
+-- Up-to-date: /root/ros2_ws/install/include/diane_point_cloud_transport/diane_subscriber.hpp
+-- Up-to-date: /root/ros2_ws/install/include/diane_point_cloud_transport/diane_publisher.hpp
+-- Up-to-date: /root/ros2_ws/install/include/diane_point_cloud_transport/diane_encoder.hpp
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/diane_plugins.xml
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/environment/library_path.sh
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/environment/library_path.dsv
+-- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/package_run_dependencies/diane_point_cloud_transport
+-- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/parent_prefix_path/diane_point_cloud_transport
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/environment/ament_prefix_path.sh
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/environment/ament_prefix_path.dsv
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/environment/path.sh
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/environment/path.dsv
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/local_setup.bash
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/local_setup.sh
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/local_setup.zsh
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/local_setup.dsv
+-- Installing: /root/ros2_ws/install/share/diane_point_cloud_transport/package.dsv
+-- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/packages/diane_point_cloud_transport
+-- Up-to-date: /root/ros2_ws/install/share/ament_index/resource_index/point_cloud_transport__pluginlib__plugin/diane_point_cloud_transport
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/cmake/diane_point_cloud_transportConfig.cmake
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/cmake/diane_point_cloud_transportConfig-version.cmake
+-- Up-to-date: /root/ros2_ws/install/share/diane_point_cloud_transport/package.xml

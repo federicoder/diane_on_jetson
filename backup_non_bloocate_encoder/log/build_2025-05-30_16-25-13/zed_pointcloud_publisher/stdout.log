@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info
+writing ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/entry_points.txt
+writing requirements to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/requires.txt
+writing top-level names to ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/top_level.txt
+writing manifest file '../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/SOURCES.txt'
+reading manifest file '../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/ros2_ws/build/zed_pointcloud_publisher/build
+creating /root/ros2_ws/build/zed_pointcloud_publisher/build/lib
+creating /root/ros2_ws/build/zed_pointcloud_publisher/build/lib/zed_pointcloud_publisher
+copying zed_pointcloud_publisher/zed_pointcloud_publisher.py -> /root/ros2_ws/build/zed_pointcloud_publisher/build/lib/zed_pointcloud_publisher
+copying zed_pointcloud_publisher/__init__.py -> /root/ros2_ws/build/zed_pointcloud_publisher/build/lib/zed_pointcloud_publisher
+running install
+running install_lib
+creating /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher
+copying /root/ros2_ws/build/zed_pointcloud_publisher/build/lib/zed_pointcloud_publisher/zed_pointcloud_publisher.py -> /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher
+copying /root/ros2_ws/build/zed_pointcloud_publisher/build/lib/zed_pointcloud_publisher/__init__.py -> /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher
+byte-compiling /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher/zed_pointcloud_publisher.py to zed_pointcloud_publisher.cpython-38.pyc
+byte-compiling /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher/__init__.py to __init__.cpython-38.pyc
+running install_data
+copying resource/zed_pointcloud_publisher -> /root/ros2_ws/install/share/ament_index/resource_index/packages
+copying package.xml -> /root/ros2_ws/install/share/zed_pointcloud_publisher
+running install_egg_info
+Copying ../../build/zed_pointcloud_publisher/zed_pointcloud_publisher.egg-info to /root/ros2_ws/install/lib/python3.8/site-packages/zed_pointcloud_publisher-0.0.0-py3.8.egg-info
+running install_scripts
+Installing zed_pointcloud_publisher script to /root/ros2_ws/install/lib/zed_pointcloud_publisher
+writing list of installed files to '/root/ros2_ws/build/zed_pointcloud_publisher/install.log'
