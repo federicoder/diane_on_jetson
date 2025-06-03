@@ -47,6 +47,7 @@ DianeSubscriber::DecodeResult DianeSubscriber::decodeTyped(
     out->height = 1;
     out->width = static_cast<uint32_t>(n_pts);
     out->is_dense = false;
+    out->is_bigendian = false;
     out->point_step = 16;  // XYZ (3 float32) + RGB (float32)
     out->row_step = out->point_step * out->width;
 
@@ -84,7 +85,7 @@ DianeSubscriber::DecodeResult DianeSubscriber::decodeTyped(
         std::memcpy(&rgb_f, &rgb32, sizeof(rgb_f));
 
         uint8_t* out_ptr = &out->data[i * out->point_step];
-        memcpy(out_ptr, &xf, 4);
+       memcpy(out_ptr, &xf, 4);
         memcpy(out_ptr + 4, &yf, 4);
         memcpy(out_ptr + 8, &zf, 4);
         memcpy(out_ptr + 12, &rgb_f, 4);

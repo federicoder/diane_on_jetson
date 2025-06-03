@@ -8,9 +8,12 @@
 #include <cstring>
 #include <array>
 #include <limits>
-
+#include <cuda_runtime.h>
+#include <functional>            // std::bind
+#include <rclcpp/rclcpp.hpp>     // logger
 #include <diane_point_cloud_transport/diane_encoder.hpp>
-
+#include <chrono>
+#include <rcl_interfaces/msg/parameter_descriptor.hpp>
 // Utility: pack RGBA floats (0–1) into a single float via bit reinterpretation
 inline float color_to_float(const std::array<float,4>& color) {
     uint32_t r = static_cast<uint32_t>(color[0] * 255.0f) & 0xFF;
@@ -62,9 +65,13 @@ auto invdist = 1.0f / (z.div(max_z + 1e-6f).add(1e-6f));
 auto priority = torch::nan_to_num(invdist.mul(valid_mask), 0.0f);
 
 
-    float top = priority.max().item<float>();
-    auto close = z.lt(dist_guarant);
-    priority.masked_fill_(close, top);
+    //float top = priority.max().item<float>();
+    //auto close = z.lt(dist_guarant);
+    //priority.masked_fill_(close, top);
+auto top_t = priority.amax();   // tensor 0‐D in GPU
+auto close  = z.lt(dist_guarant);
+priority.masked_fill_(close, top_t);
+
 
     auto indices = priority.multinomial(max_pts, false);
     int64_t num_valid = indices.numel();
@@ -80,11 +87,29 @@ auto priority = torch::nan_to_num(invdist.mul(valid_mask), 0.0f);
     // Bitcast float32->int32
     //auto c_int = torch::empty({M}, torch::dtype(torch::kInt32).device(c_sel.device()));
     
-    if (!c_sel.is_contiguous()) {
-    c_sel = c_sel.contiguous();
-}
-auto c_int = c_sel.view(torch::kInt32);
-    
+//    if (!c_sel.is_contiguous()) {
+//    c_sel = c_sel.contiguous();
+//}
+//auto c_int = c_sel.view(torch::kInt32);
+  // Gather color (float32 packed RGBA) ------------------------------------
+
+int64_t M  = c_sel.size(0);
+
+// Bit-cast float32 → int32 SENZA passare per la CPU ---------------------
+auto c_int = torch::empty({M},
+              torch::dtype(torch::kInt32).device(c_sel.device()));  // [M] i32 GPU
+
+cudaError_t err = cudaMemcpy(                       // device → device
+        c_int.data_ptr<int32_t>(),                  // dst
+        c_sel.data_ptr<float>(),                    // src
+        M * sizeof(float),
+        cudaMemcpyDeviceToDevice);
+
+if (err != cudaSuccess)
+    throw std::runtime_error("cudaMemcpyDeviceToDevice fallita in diane_multinomial_i16!");
+
+// -----------------------------------------------------------------------
+  
     // std::memcpy(c_int.data_ptr<int32_t>(), c_sel.data_ptr<float>(), M * sizeof(float));
     // Extract bytes
     auto r_byte = torch::bitwise_and(torch::bitwise_right_shift(c_int,24), 0xFF).to(torch::kInt16);
@@ -101,12 +126,19 @@ auto c_int = c_sel.view(torch::kInt32);
 
     // Write output: interleaved XYZ then colors
     // XYZ (3*int16) at strides of 4, color after
-    for (int64_t i = 0; i < num_valid; ++i) {
-        output[i*4 + 0] = x_sel[i];
-        output[i*4 + 1] = y_sel[i];
-        output[i*4 + 2] = z_sel[i];
-        output[i*4 + 3] = rgb664[i];
-    }
+    auto output_view = output.view({num_valid, 4});
+    output_view.select(1,0) = x_sel;
+        output_view.select(1,1) = y_sel;
+            output_view.select(1,2) = z_sel;
+                output_view.select(1,3) = rgb664;
+               
+    
+  //  for (int64_t i = 0; i < num_valid; ++i) {
+   //     output[i*4 + 0] = x_sel[i];
+     //   output[i*4 + 1] = y_sel[i];
+       // output[i*4 + 2] = z_sel[i];
+       // output[i*4 + 3] = rgb664[i];
+    //}
 
     return num_valid * sizeof(int16_t) * 4; // bytes
 }
@@ -134,6 +166,7 @@ std::vector<uint8_t> encode_diane_multinomial_i16(
     torch::Tensor out      = torch::empty({N*4},opt_i16);
     float dflt = color_to_float(default_col);
     float nanf = color_to_float(nan_col);
+
 int64_t bufSize = diane_multinomial_i16(
     pc, out, reshaped, x, y, z, c,
     bw, fps, dist_guarant,
@@ -143,9 +176,11 @@ int64_t bufSize = diane_multinomial_i16(
 if (bufSize <= 0 || bufSize > out.numel() * sizeof(int16_t)) {
     throw std::runtime_error("bufSize non valido in diane_multinomial_i16!");
 }
+cudaDeviceSynchronize();
     auto out_cpu = out.to(torch::kCPU).contiguous();
     std::vector<uint8_t> result(bufSize);
     std::memcpy(result.data(), out_cpu.data_ptr(), bufSize);
+
     return result;
 }
 

@@ -269,9 +269,6 @@ ros2 run point_cloud_transport republish \
 
 con gdb:
 
-
-
-
 ros2 run --prefix 'gdb -ex run --args' point_cloud_transport republish \
 --out_transport diane \
 --in_transport raw \
@@ -292,4 +289,25 @@ ros2 run --prefix 'gdb -ex run --args' point_cloud_transport republish \
 --remap in/diane:=/pointcloud_diane \
 --remap out:=/decoded
 --qos-profile best_effort
+
+
+senza gdb:
+ros2 run point_cloud_transport republish \
+--out_transport diane \
+--in_transport raw \
+--ros-args \
+--log-level DEBUG \
+-r __node:=point_cloud_encoder \
+--remap in:=/zed/point_cloud \
+--remap out/diane:=/pointcloud_diane
+
+ros2 run point_cloud_transport republish \
+--out_transport raw \
+--in_transport diane \
+--ros-args \
+--log-level DEBUG \
+-r __node:=point_cloud_decoder \
+--remap in/diane:=/pointcloud_diane \
+--remap out:=/decoded
+
 
