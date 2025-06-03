@@ -13,10 +13,10 @@ namespace diane_point_cloud_transport
 
 void DianeSubscriber::declareParameters()
 {
-declareParam<double>("bandwidth", 50000.0);
+declareParam<double>("bandwidth", 8000000000.0);
 
   //getParam<double>("bandwidth", config_.bandwidth);
-  declareParam<double>("fps", 60.0);
+  declareParam<double>("fps", 30.0);
   //getParam<double>("fps", config_.fps);
 
   auto cb = [this](std::vector<rclcpp::Parameter> ps) -> rcl_interfaces::msg::SetParametersResult {
