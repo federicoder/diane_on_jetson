@@ -139,7 +139,7 @@ DianePublisher::encodeTyped(
 auto t_post_encode = std::chrono::high_resolution_clock::now();
 double encode_ms = std::chrono::duration<double,std::milli>(t_post_encode - t_pre_encode).count();
 RCLCPP_DEBUG(logger, "[encodeTyped] Tempo encode_diane_multinomial_i16: %.2f ms", encode_ms);
-  RCLCPP_DEBUG(logger, "[encodeTyped] bufSize=%zu byte", compressed.size());
+  RCLCPP_DEBUG(logger, "[encodeTyped] bufSize=%zu byte", compressed.size());  RCLCPP_DEBUG(logger, "[encodeTyped] number_of_points_obtained=%zu points", compressed.size()/1024);
 
   //
   // === 7. Compongo il messaggio compress -> publish ===

@@ -7,7 +7,7 @@
 #include <sensor_msgs/point_cloud2_iterator.hpp>  // giusto include
 #include <sensor_msgs/msg/point_field.hpp>
 #include <rclcpp/rclcpp.hpp>
-
+#include <chrono>
 namespace diane_point_cloud_transport
 {
 
@@ -16,7 +16,7 @@ void DianeSubscriber::declareParameters()
 declareParam<double>("bandwidth", 8000000000.0);
 
   //getParam<double>("bandwidth", config_.bandwidth);
-  declareParam<double>("fps", 30.0);
+  declareParam<double>("fps", 120.0);
   //getParam<double>("fps", config_.fps);
 
   auto cb = [this](std::vector<rclcpp::Parameter> ps) -> rcl_interfaces::msg::SetParametersResult {
@@ -38,6 +38,8 @@ std::string DianeSubscriber::getTransportName() const
 DianeSubscriber::DecodeResult DianeSubscriber::decodeTyped(
     const point_cloud_interfaces::msg::CompressedPointCloud2 & compressed) const
 {
+  auto logger = rclcpp::get_logger("diane_subscriber");
+  auto t_pre_decode = std::chrono::high_resolution_clock::now();
     const auto & data = compressed.compressed_data;
     size_t n_pts = data.size() / 8; // 8 byte per punto compresso
 
@@ -90,7 +92,9 @@ DianeSubscriber::DecodeResult DianeSubscriber::decodeTyped(
         memcpy(out_ptr + 8, &zf, 4);
         memcpy(out_ptr + 12, &rgb_f, 4);
     }
-
+auto t_post_decode = std::chrono::high_resolution_clock::now();
+double decode_ms = std::chrono::duration<double,std::milli>(t_post_decode - t_pre_decode).count();
+RCLCPP_DEBUG(logger, "[decodeTyped] Tempo decode: %.2f ms", decode_ms);
     return out;
 }
 

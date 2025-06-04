@@ -70,7 +70,8 @@ COPY src /root/ros2_ws/src
 RUN sudo apt-get install -y libopenblas-base libopenmpi-dev 
 RUN wget https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl -O torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
 RUN pip3 install torch-1.14.0a0+44dac51c.nv23.02-cp38-cp38-linux_aarch64.whl
-
+ENV LD_LIBRARY_PATH=/usr/local/lib/python3.8/dist-packages/torch/lib:$LD_LIBRARY_PATH
+ENV LD_LIBRARY_PATH=/usr/local/lib/python3.8/dist-packages/torch/lib:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 # Setup environment variables
 COPY ros_entrypoint.sh /sbin/ros_entrypoint.sh
 RUN sudo chmod 755 /sbin/ros_entrypoint.sh

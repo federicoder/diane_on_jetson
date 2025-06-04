@@ -9,11 +9,6 @@
 int64_t diane_multinomial_i16(
     const torch::Tensor& points,
     torch::Tensor& output,
-    torch::Tensor& points_reshaped,
-    torch::Tensor& x,
-    torch::Tensor& y,
-    torch::Tensor& z,
-    torch::Tensor& c,
     float bw,
     float fps,
     float dist_guarant,
