@@ -1,3 +1,0 @@
-[console_scripts]
-diane_publisher = diane_encoder.diane_publisher:main
-

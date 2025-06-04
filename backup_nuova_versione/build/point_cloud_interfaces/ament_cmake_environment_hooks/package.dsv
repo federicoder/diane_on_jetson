@@ -1,4 +1,0 @@
-source;share/point_cloud_interfaces/local_setup.bash
-source;share/point_cloud_interfaces/local_setup.dsv
-source;share/point_cloud_interfaces/local_setup.sh
-source;share/point_cloud_interfaces/local_setup.zsh

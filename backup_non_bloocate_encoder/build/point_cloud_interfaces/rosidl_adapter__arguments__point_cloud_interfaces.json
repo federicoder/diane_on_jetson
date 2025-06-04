@@ -1,6 +1,0 @@
-{
-  "package_name": "point_cloud_interfaces",
-  "non_idl_tuples": [
-    "/root/ros2_ws/src/point_cloud_transport_plugins-humble/point_cloud_interfaces:msg/CompressedPointCloud2.msg"
-  ]
-}
