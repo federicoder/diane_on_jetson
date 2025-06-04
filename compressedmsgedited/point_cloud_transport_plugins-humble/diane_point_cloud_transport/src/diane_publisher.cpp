@@ -140,10 +140,7 @@ auto t_post_encode = std::chrono::high_resolution_clock::now();
 double encode_ms = std::chrono::duration<double,std::milli>(t_post_encode - t_pre_encode).count();
 RCLCPP_DEBUG(logger, "[encodeTyped] Tempo encode_diane_multinomial_i16: %.2f ms", encode_ms);
   RCLCPP_DEBUG(logger, "[encodeTyped] bufSize=%zu byte", compressed.size());  RCLCPP_DEBUG(logger, "[encodeTyped] number_of_points_obtained=%zu points", compressed.size()/1024);
-// 1) Prendo i millisecondi dall'epoch
-auto ms_computed = std::chrono::duration_cast<std::chrono::milliseconds>(
-    encode_ms.time_since_epoch()
-).count();
+
 
   //
   // === 7. Compongo il messaggio compress -> publish ===
@@ -154,7 +151,7 @@ auto ms_computed = std::chrono::duration_cast<std::chrono::milliseconds>(
   out.height         = raw_msg.height;
   out.width          = raw_msg.width;
   out.compressed_data = std::move(compressed);
-  out.timestamp = static_cast<uint64_t>(ms_computed);
+  out.timestamp = static_cast<uint64_t>(encode_ms);;
   out.numberpoints = out.compressed_data.size() / 8 ;
   out.bw = bandwidth_;
   out.fps = fps_;
