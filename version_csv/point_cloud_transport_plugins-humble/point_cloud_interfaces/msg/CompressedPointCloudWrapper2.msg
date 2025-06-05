@@ -16,6 +16,16 @@ uint32 row_step
 
 uint8[] compressed_data
 
+float64 encoding_time_diane
+
+uint64 timestamp
+
+uint32 numberpoints
+
+uint64 bw
+
+uint32 fps
+
 bool is_dense
 
 # compression format used (e.g. draco, zlib, etc.)

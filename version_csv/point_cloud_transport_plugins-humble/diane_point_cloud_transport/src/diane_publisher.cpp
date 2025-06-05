@@ -151,7 +151,8 @@ RCLCPP_DEBUG(logger, "[encodeTyped] Tempo encode_diane_multinomial_i16: %.2f ms"
   out.height         = raw_msg.height;
   out.width          = raw_msg.width;
   out.compressed_data = std::move(compressed);
-  out.timestamp = static_cast<uint64_t>(encode_ms);;
+  out.encoding_time_diane = encode_ms;
+  out.timestamp = t0.time_since_epoch().count();
   out.numberpoints = out.compressed_data.size() / 8 ;
   out.bw = bandwidth_;
   out.fps = fps_;
