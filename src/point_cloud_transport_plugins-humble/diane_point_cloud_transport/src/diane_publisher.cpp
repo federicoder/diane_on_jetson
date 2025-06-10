@@ -10,13 +10,38 @@
 
 // Per misurare i tempi
 #include <chrono>
-
+#include <rclcpp/qos.hpp>
 namespace diane_point_cloud_transport
 {
 
 DianePublisher::DianePublisher()
 : bandwidth_(8e9f), fps_(30.0f)
 {}
+
+
+// dentro la tua classe publisher, override della funzione
+void DianePublisher::advertiseImpl(
+    rclcpp::Node::SharedPtr node,
+    const std::string & base_topic,
+    rmw_qos_profile_t custom_qos,
+    const rclcpp::PublisherOptions & options)
+{
+    // Forza sempre BEST_EFFORT
+    custom_qos.reliability = RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT;
+    custom_qos.durability  = RMW_QOS_POLICY_DURABILITY_VOLATILE;
+    custom_qos.history     = RMW_QOS_POLICY_HISTORY_KEEP_LAST;
+
+    // CONVERTI custom_qos in rclcpp::QoS!
+    rclcpp::QoS qos_profile(rclcpp::QoSInitialization::from_rmw(custom_qos));
+    qos_profile.get_rmw_qos_profile() = custom_qos;
+    SimplePublisherPlugin<point_cloud_interfaces::msg::CompressedPointCloudWrapper2>::advertiseImpl(
+        node, base_topic, custom_qos, options
+    );
+/*
+    this->publisher_ = node->create_publisher<point_cloud_interfaces::msg::CompressedPointCloudWrapper2>(
+        base_topic, custom_qos, options);
+        */
+}
 
 void DianePublisher::declareParameters(const std::string & base_topic)
 {
@@ -141,7 +166,6 @@ double encode_ms = std::chrono::duration<double,std::milli>(t_post_encode - t_pr
 RCLCPP_DEBUG(logger, "[encodeTyped] Tempo encode_diane_multinomial_i16: %.2f ms", encode_ms);
   RCLCPP_DEBUG(logger, "[encodeTyped] bufSize=%zu byte", compressed.size());  RCLCPP_DEBUG(logger, "[encodeTyped] number_of_points_obtained=%zu points", compressed.size()/1024);
 
-
   //
   // === 7. Compongo il messaggio compress -> publish ===
   //
@@ -151,8 +175,9 @@ RCLCPP_DEBUG(logger, "[encodeTyped] Tempo encode_diane_multinomial_i16: %.2f ms"
   out.height         = raw_msg.height;
   out.width          = raw_msg.width;
   out.compressed_data = std::move(compressed);
-  out.timestamp = static_cast<uint64_t>(encode_ms);;
-  out.numberpoints = out.compressed_data.size() / 8 ;
+  out.encoding_time_diane = encode_ms;
+  out.timestamp = t0.time_since_epoch().count();
+  out.numberpoints = compressed.size()/8 ;
   out.bw = bandwidth_;
   out.fps = fps_;
   

@@ -311,3 +311,8 @@ ros2 run point_cloud_transport republish \
 --remap out:=/decoded
 
 
+per lanciare launcher che modifica bw e fps dinamicamente:
+ros2 run dynamic_encoder_pkg dynamic_encoder_launcher   --encoder-node /point_cloud_encoder   --param-bandwidth pointcloud_diane.bandwidth   --param-fps pointcloud_diane.fps   --topic-decoded /decoded   --topic-encoded /pointcloud_diane   --period 10.0
+
+directory log csv:
+data_csv

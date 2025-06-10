@@ -81,12 +81,7 @@ auto priority = torch::nan_to_num(invdist.mul(valid_mask), 0.0f);
 
     float top = priority.max().item<float>();
     auto close = z.lt(dist_guarant);
-   priority.masked_fill_(close, top);
-/*auto top_t = priority.amax();   // tensor 0‐D in GPU
-auto close  = z.lt(dist_guarant);
-priority.masked_fill_(close, top_t);
-*/
-
+    priority.masked_fill_(close, top);
     auto indices = priority.multinomial(max_pts, false);
     int64_t num_valid = indices.numel();
     
