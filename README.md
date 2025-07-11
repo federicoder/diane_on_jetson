@@ -37,3 +37,8 @@ In the repository, the main modules are:
 - my_build.sh: to build the above dockerfile.
 - my_run.sh: to start a container with all the necessary configuration setup.
 - src directory: the src directory copied in the container.
+
+### DIANE_POINT_CLOUD_TRANSPORT
+It is the main subdirectory of `point_cloud_transport` that implements in c++ language the codec `DIANE`. It is possible to find the src directory in which there are all implemented codes and the include directory to see the the related headers files.
+
+----
