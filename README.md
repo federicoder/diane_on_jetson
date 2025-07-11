@@ -3,7 +3,7 @@
 <table align="center">
   <tr>
     <td align="center">
-      <img src="/connection.png" alt="Connessione" width="500"/>
+      <img src="/connection(1).png" alt="Connessione" width="500"/>
     </td>
   </tr>
 </table>
