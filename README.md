@@ -7,7 +7,6 @@
     </td>
   </tr>
 </table>  
-**Table of Contents**
 
 - [Project Structure and Description](#project-structure-and-description)
   - [DIANE_POINT_CLOUD_TRANSPORT](#DIANE_POINT_CLOUD_TRANSPORT)
