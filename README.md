@@ -10,7 +10,7 @@
 **Table of Contents**
 
 - [Project Structure and Description](#project-structure-and-description)
-  - [C3lab_test_pub](#c3lab_test_pub)
+  - [DIANE_POINT_CLOUD_TRANSPORT](#DIANE_POINT_CLOUD_TRANSPORT)
   - [Diane_control](#diane_control)
   - [Point_cloud_transport_plugins](#point_cloud_transport_plugins)
     - [Diane_point_cloud_transport](#diane_point_cloud_transport)
