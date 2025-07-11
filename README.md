@@ -79,6 +79,28 @@ Now that the /zed_pointcloud topic is started, it is possible to do two kind of 
 - To start the `launcher` version
 ----
 ##### Standalone version
-
-
+For the standalone version, it is given to the user the possibility to change directly the configuration paramters of the publisher compressor node that are : **BANDWIDTH** and **FPS**.
+First of all, after having launched the /zed_pointcloud topic, it can be possible to start the compressor node and decompressor node sepratly by giving in input on bash the following commands:
+For the compressor node:
+```
+ros2 run point_cloud_transport republish \
+--out_transport diane \
+--in_transport raw \
+--ros-args \
+--log-level DEBUG \
+-r __node:=point_cloud_encoder \
+--remap in:=/zed/point_cloud \
+--remap out/diane:=/pointcloud_diane
+```
+For the decompressor node:
+```
+ros2 run point_cloud_transport republish \
+--out_transport raw \
+--in_transport diane \
+--ros-args \
+--log-level DEBUG \
+-r __node:=point_cloud_decoder \
+--remap in/diane:=/pointcloud_diane \
+--remap out:=/decoded
+```
 ##### Launcher version
