@@ -27,6 +27,10 @@
 ### Project Structure and Description
 
 The following repository, named **diane_on_jetson**, was created for the master’s thesis project with the purpose of implementing a lossy codec called **DIANE** on the ROS 2 Humble `point_cloud_transport` plugin.
+This repository is part of a master's thesis project aimed at extending the [`point_cloud_transport`](https://github.com/ros-perception/point_cloud_transport_plugins/tree/humble) repository, a standard ROS 2 plugin-based system for publishing and subscribing to compressed `sensor_msgs/PointCloud2` messages.
+
+The goal of this work is to create a pipeline used to perform lossy compression operationn for point clouds with ROS2 HUMBLE. To implement this pipeline, it is used a particoular image of **ROS2 HUMBLE** containing **ZED SDK**, and all requirements needed to use Torch (wheeled version) in a JETSON XAVIER NX.
+The  new **lossy point cloud compression plugin** used in `point_cloud_transport` is called `DIANE` and it enables real-time performance using a custom algorithm based on **PyTorch** and its c++ wheeled version **Torch**. This plugin complements existing ones like `zlib`, `zstd`, and `draco`, and is designed to optimize the trade-off between compression ratio, processing time, with a strong focus on runtime efficiency for real-time robotics applications.
 
 In the repository, the main modules are:
 - Dockerfile.tegra: dockerfile in which there are all the necessary images and SDK to build a Ros2 Humble enviromnet (pointcloudtransport, ZED SDK, torch, etc..)
