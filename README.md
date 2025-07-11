@@ -11,10 +11,8 @@
 
 - [Project Structure and Description](#project-structure-and-description)
   - [DIANE_POINT_CLOUD_TRANSPORT](#DIANE_POINT_CLOUD_TRANSPORT)
-  - [Diane_control](#diane_control)
-  - [Point_cloud_transport_plugins](#point_cloud_transport_plugins)
-    - [Diane_point_cloud_transport](#diane_point_cloud_transport)
-    - [C3lab_point_cloud_transport](#c3lab_point_cloud_transport)
+  - [zed_pointcloud_publisher](#zed_pointcloud_publisher)
+  - [dynamic_encoder_pkg](#dynamic_encoder_pkg)
 - [Installation & Usage](#installation--usage)
     - [Docker Environment Setup](#1-docker-environment-setup)
     - [Building the Workspace](#2-building-the-workspace-inside-the-container)
@@ -39,12 +37,23 @@ In the repository, the main modules are:
 - src directory: the src directory copied in the container.
 
 ### DIANE_POINT_CLOUD_TRANSPORT
-It is the main subdirectory of `point_cloud_transport` that implements in c++ language the codec `DIANE`. It is possible to find the src directory in which there are all implemented codes and the include directory to see the the related headers files.
+It is the main subdirectory of `point_cloud_transport` that implements in c++ language the codec `DIANE`. It can be found in `src/point_cloud_transport_plugins-humble`. It is possible to find the src directory in which there are all implemented codes and the include directory to see the the related headers files.
+
+### zed_pointcloud_publisher
+It is the ros2 package used to acquire from the `ZED-CAMERA` and `ZED-SDK` the point cloud. This package is built in python languange and it can be easly used to change all paramterers of the acquisition process.
+
+### dynamic_encoder_pkg
+It is the launchdr used to change the operation paramters (bandwidth and FPS) of the DIANE publisher in `point_cloud_transport`. It acquire all the bandwidth and FPS needed by using the commands:
+```
+ros2 topic bw
+ros2 topic hz
+```
+pointing the Diane Subscriber in which is perfomred the acquisition and conversion of the compressed msgs.
 
 ----
 ## Installation & Usage
 
-This section describes how to set up and run the `diane` plugin for `point_cloud_transport` using Docker. The process is divided into three main phases: Docker environment setup, workspace build, and node launching.
+This section describes how to set up and run the `DIANE` for `point_cloud_transport` using Docker. The process is divided into three main phases: Docker environment setup, workspace build, and node launching.
 
 ### 1. Docker Environment Setup
 
