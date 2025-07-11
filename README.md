@@ -103,4 +103,19 @@ ros2 run point_cloud_transport republish \
 --remap in/diane:=/pointcloud_diane \
 --remap out:=/decoded
 ```
+From now on, all the nodes are uo and it is possible to see in the logs all the msgs acuired by compressor and decompressor nodes.
+To see the comfiguration paramters of compressor node is possible to use the commands:
+```
+ros2 param dump point_cloud_encoder
+```
+and then to change them is used the commands (for example):
+```
+ros2 param set /point_cloud_encoder pointcloud_diane.bandwidth 8000000.0
+ros2 param set /point_cloud_encoder pointcloud_diane.fps 60.0
+
+```
+In this way the bandiwdth of `point_cloud_transport` node that use DIANE codec is changed to 800000.0 bps and the fps to 60.0.
+To acuire data is possible to create a data_csv folder in the same /ros2_ws directory and the Diane Subscriber will save all .csv files related to the output of the comprpession / decompression operations.
+It is also possible another paramter called lambda to do the algorthm more or less agreessive (more aggressive with values >>1 ).
+
 ##### Launcher version
