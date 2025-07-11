@@ -19,8 +19,6 @@
     - [Launching the nodes](#3-launching-the-nodes)
         - [Launcher](#option-31--use-launcher-script-for-encoding-and-decoding)
         - [Run nodes separately](#option-32--run-encoding-and-decoding-nodes-separately)
-- [Features](#features)
-
 
 ### Project Structure and Description
 
