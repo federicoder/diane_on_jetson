@@ -42,3 +42,23 @@ In the repository, the main modules are:
 It is the main subdirectory of `point_cloud_transport` that implements in c++ language the codec `DIANE`. It is possible to find the src directory in which there are all implemented codes and the include directory to see the the related headers files.
 
 ----
+## Installation & Usage
+
+This section describes how to set up and run the `diane` plugin for `point_cloud_transport` using Docker. The process is divided into three main phases: Docker environment setup, workspace build, and node launching.
+
+### 1. Docker Environment Setup
+
+First, build and run the Docker container that contains all necessary dependencies:
+
+```bash
+./build_docker.sh
+./run_docker.sh
+```
+
+### 2. Building the Workspace (inside the container)
+Once inside the container (in `/ws`), build the workspace using:
+
+```bash
+colcon build --merge-install --event-handlers console_direct+
+```
+This will compile the `point_cloud_transport` plugins and all required ROS 2 packages.
