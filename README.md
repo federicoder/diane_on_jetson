@@ -78,4 +78,8 @@ ros2 run zed_pointcloud_publisher zed_pointcloud_publisher
 Now that the /zed_pointcloud topic is started, it is possible to do two kind of operations to compress the point clouds with `DIANE` in `point_cloud_transport`:
 - To start the `standalone` version
 - To start the `launcher` version
+----
+##### Standalone version
 
+
+##### Launcher version
