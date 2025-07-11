@@ -58,14 +58,24 @@ This section describes how to set up and run the `DIANE` for `point_cloud_transp
 First, build and run the Docker container that contains all necessary dependencies:
 
 ```bash
-./build_docker.sh
-./run_docker.sh
+./my_builder.sh
+./my_run.sh
 ```
 
 ### 2. Building the Workspace (inside the container)
-Once inside the container (in `/ws`), build the workspace using:
+Once inside the container (in `/ros2_ws`), build the workspace using:
 
 ```bash
 colcon build --merge-install --event-handlers console_direct+
 ```
-This will compile the `point_cloud_transport` plugins and all required ROS 2 packages.
+This command will compile the `point_cloud_transport` plugins and all required ROS 2 packages.
+
+### 3. Launching the Nodes
+After everithing is compiled, it is possible to start the zed_pointcloud_publisher and starting to acquire the pointloud giving in input the command:
+```
+ros2 run zed_pointcloud_publisher zed_pointcloud_publisher
+```
+Now that the /zed_pointcloud topic is started, it is possible to do two kind of operations to compress the point clouds with `DIANE` in `point_cloud_transport`:
+- To start the `standalone` version
+- To start the `launcher` version
+
