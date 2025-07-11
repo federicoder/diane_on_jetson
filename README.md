@@ -17,8 +17,8 @@
     - [Docker Environment Setup](#1-docker-environment-setup)
     - [Building the Workspace](#2-building-the-workspace-inside-the-container)
     - [Launching the nodes](#3-launching-the-nodes)
-        - [Launcher](#option-31--use-launcher-script-for-encoding-and-decoding)
-        - [Run nodes separately](#option-32--run-encoding-and-decoding-nodes-separately)
+        - [Standalone version](#standalone-version)
+        - [Launcher version](#launcher-version)
 
 ### Project Structure and Description
 
