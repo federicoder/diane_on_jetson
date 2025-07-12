@@ -18,6 +18,7 @@
     - [Launching the nodes](#3-launching-the-nodes)
         - [Standalone version](#standalone-version)
         - [Launcher version](#launcher-version)
+    - [Contributing](#contributing)
 
 ### Project Structure and Description
 
@@ -115,7 +116,29 @@ ros2 param set /point_cloud_encoder pointcloud_diane.fps 60.0
 
 ```
 In this way the bandiwdth of `point_cloud_transport` node that use DIANE codec is changed to 800000.0 bps and the fps to 60.0.
-To acuire data is possible to create a data_csv folder in the same /ros2_ws directory and the Diane Subscriber will save all .csv files related to the output of the comprpession / decompression operations.
-It is also possible another paramter called lambda to do the algorthm more or less agreessive (more aggressive with values >>1 ).
+To acquire data, it is possible to create a 'data_csv' folder in the '/ros2_ws' directory, where the 'Diane Subscriber' will save all '.csv' files related to the output of the compression/decompression operations.
+It is also possible to change the behaviour of the algorithm using another parameter called lambda (the higher the lambda, the more aggressive the algorithm is).
 
 ##### Launcher version
+In addition to launching the commands shown in the `standalone` version, run the launcher one with the following command:
+```
+ros2 run dynamic_encoder_pkg dynamic_encoder_launcher \
+  --encoder-node     /point_cloud_encoder \
+  --param-bandwidth  pointcloud_diane.bandwidth \
+  --param-fps        pointcloud_diane.fps \
+  --topic-bw         /decoded \
+  --topic-hz         /decoded \
+  --period           2.0 \
+  --update-interval  10.0 \
+  --min-bandwidth    1000000
+```
+With this configuration the min bandiwidth is set to 1 mbps and the update interval is set to capture the values from `ros2 topic bw` and `ros2 topic hz` within 2.0 seconds (it is not reccomanded to reduce it because it can be too short the time to acquire data).
+To change the name of node in which there are the paramters to be changed, it is possible to use the flag: `--encoder-node` and to specify what paramters have to change the flags: `--param-bandwidth` and `--param-fps`.
+The flags `--topic-bw` and `--topic-hz` want as input the name of the topic that has to be scanned.
+
+---
+## Contributing
+
+Pull requests are welcome!  
+Please feel free to fork the repository, make your changes on a new branch, and open a pull request.  
+We appreciate your contributions and will review them as soon as possible.
