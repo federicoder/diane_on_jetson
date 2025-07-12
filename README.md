@@ -8,6 +8,8 @@
   </tr>
 </table>  
 
+----
+
 - [Project Structure and Description](#project-structure-and-description)
   - [DIANE_POINT_CLOUD_TRANSPORT](#DIANE_POINT_CLOUD_TRANSPORT)
   - [zed_pointcloud_publisher](#zed_pointcloud_publisher)
@@ -19,6 +21,8 @@
         - [Standalone version](#standalone-version)
         - [Launcher version](#launcher-version)
     - [Contributing](#contributing)
+    
+----
 
 ### Project Structure and Description
 
